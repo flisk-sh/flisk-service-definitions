@@ -1,0 +1,10 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "minio",
+  "appType": "bring-your-own",
+  "stack": "tdk-crawl-rinypi",
+  "port": 4002,
+  "healthCheckPath": "/health",
+  "image": "cgr.dev/chainguard/minio:latest-dev@sha256:d7c906993247627c19f37fc1fa302c34cf2d209ae0e7dc7d52fb0be6ac2849ba"
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "minio-init",
+  "appType": "bring-your-own",
+  "stack": "tdk-crawl-shmf9y",
+  "port": 4004,
+  "healthCheckPath": "/health",
+  "image": "ghcr.io/coollabsio/mx:0.1.0",
+  "dependsOn": [
+    "minio"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.app.json",
+  "name": "@laradock/laradock",
+  "schemaVersion": 1,
+  "description": "Full PHP development environment for Docker. Run Laravel, Symfony, CodeIgniter, Phalcon, WordPress, Drupal, Magento, Moodle, or any PHP project with 70+ pre-configured services: Nginx, Apache, PHP-FPM, MySQL, PostgreSQL, MongoDB, Redis, Elasticsearch & more.",
+  "repository": "https://github.com/laradock/laradock",
+  "license": "MIT",
+  "sourceCommit": "ed6dbaaacb8493fa86362583492ca4c00025188f"
+}

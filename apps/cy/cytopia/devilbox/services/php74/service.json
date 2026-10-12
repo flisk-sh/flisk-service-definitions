@@ -1,0 +1,13 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "php74",
+  "appType": "bring-your-own",
+  "stack": "tdk-crawl-xym24y",
+  "port": 4015,
+  "healthCheckPath": "/health",
+  "image": "devilbox/php-fpm:7.4-prod-0.150",
+  "dependsOn": [
+    "bind"
+  ]
+}

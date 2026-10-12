@@ -1,0 +1,13 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "ariang",
+  "appType": "bring-your-own",
+  "stack": "tdk-crawl-fx4zmk",
+  "port": 4001,
+  "healthCheckPath": "/health",
+  "image": "p3terx/ariang",
+  "dev": {
+    "command": "--port 6880 --ipv6"
+  }
+}

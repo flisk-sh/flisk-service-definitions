@@ -1,0 +1,10 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "frankenphp",
+  "appType": "bring-your-own",
+  "stack": "tdk-crawl-z7bbuo",
+  "port": 4023,
+  "healthCheckPath": "/health",
+  "dockerfile": "./Dockerfile"
+}

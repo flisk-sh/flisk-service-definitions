@@ -1,0 +1,11 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "create-data",
+  "appType": "bring-your-own",
+  "stack": "tdk-crawl-zdsr4b",
+  "port": 4003,
+  "healthCheckPath": "/health",
+  "buildContext": "../../../example/create-data",
+  "dockerfile": "Dockerfile"
+}

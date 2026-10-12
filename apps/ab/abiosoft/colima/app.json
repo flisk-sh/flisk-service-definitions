@@ -1,0 +1,9 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.app.json",
+  "name": "@abiosoft/colima",
+  "schemaVersion": 1,
+  "description": "Container runtimes on macOS (and Linux) with minimal setup",
+  "repository": "https://github.com/abiosoft/colima",
+  "license": "MIT",
+  "sourceCommit": "49dfe87aecc1645905d0fb8a0e43ce29e12138f6"
+}

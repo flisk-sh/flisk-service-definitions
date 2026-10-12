@@ -1,0 +1,14 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "docker",
+  "appType": "bring-your-own",
+  "stack": "tdk-crawl-rinypi",
+  "port": 4004,
+  "healthCheckPath": "/health",
+  "buildContext": "../../../docker",
+  "dockerfile": "Dockerfile",
+  "dev": {
+    "command": "./arcane"
+  }
+}

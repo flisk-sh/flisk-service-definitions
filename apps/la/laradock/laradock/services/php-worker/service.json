@@ -1,0 +1,13 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "php-worker",
+  "appType": "bring-your-own",
+  "stack": "tdk-crawl-z7bbuo",
+  "port": 4082,
+  "healthCheckPath": "/health",
+  "dockerfile": "./Dockerfile",
+  "dependsOn": [
+    "workspace"
+  ]
+}

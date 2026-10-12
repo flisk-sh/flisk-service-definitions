@@ -1,0 +1,10 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "uptime-kuma",
+  "appType": "bring-your-own",
+  "stack": "tdk-crawl-1bxof2",
+  "port": 4004,
+  "healthCheckPath": "/health",
+  "image": "louislam/uptime-kuma:1"
+}

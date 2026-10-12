@@ -1,0 +1,13 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "weaviate",
+  "appType": "bring-your-own",
+  "stack": "tdk-crawl-z7bbuo",
+  "port": 4116,
+  "healthCheckPath": "/health",
+  "image": "cr.weaviate.io/semitechnologies/weaviate:${WEAVIATE_VERSION}",
+  "dev": {
+    "command": "--host 0.0.0.0 --port 8080 --scheme http"
+  }
+}

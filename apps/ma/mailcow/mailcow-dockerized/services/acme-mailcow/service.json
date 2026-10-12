@@ -1,0 +1,14 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "acme-mailcow",
+  "appType": "bring-your-own",
+  "stack": "tdk-crawl-xtphy5",
+  "port": 4000,
+  "healthCheckPath": "/health",
+  "image": "ghcr.io/mailcow/acme:1.98",
+  "dependsOn": [
+    "nginx-mailcow",
+    "unbound-mailcow"
+  ]
+}

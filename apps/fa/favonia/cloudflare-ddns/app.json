@@ -1,0 +1,9 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.app.json",
+  "name": "@favonia/cloudflare-ddns",
+  "schemaVersion": 1,
+  "description": "🌟 A small, feature-rich, and robust Cloudflare DDNS updater",
+  "repository": "https://github.com/favonia/cloudflare-ddns",
+  "license": "Apache-2.0",
+  "sourceCommit": "069bfdb5c236517d42b6315f86b5640b2e8dabe2"
+}

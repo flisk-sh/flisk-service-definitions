@@ -1,0 +1,15 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "dovecot-mailcow",
+  "appType": "bring-your-own",
+  "stack": "tdk-crawl-xtphy5",
+  "port": 4003,
+  "healthCheckPath": "/health",
+  "image": "ghcr.io/mailcow/dovecot:2.3.21.1-2",
+  "dependsOn": [
+    "mysql-mailcow",
+    "netfilter-mailcow",
+    "redis-mailcow"
+  ]
+}
