@@ -87,9 +87,7 @@ async function importRepo(repo, validator, stats) {
       }));
     }
     await writeFile(join(appDir, 'app.json'), canonicalJson({
-      $schema: 'https://tdk-landscape.github.io/schema.app.json',
       name: `@${owner}/${app}`,
-      schemaVersion: 1,
       ...(repo.description ? { description: repo.description.slice(0, 280) } : {}),
       repository: repo.html_url,
       license: repo.license.spdx_id,

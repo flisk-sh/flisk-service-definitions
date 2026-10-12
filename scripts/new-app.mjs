@@ -16,9 +16,7 @@ const REPO_ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const dir = join(REPO_ROOT, appPath(owner, app));
 await mkdir(join(dir, 'services'), { recursive: true });
 await writeFile(join(dir, 'app.json'), canonicalJson({
-  $schema: 'https://tdk-landscape.github.io/schema.app.json',
   name: `@${owner}/${app}`,
-  schemaVersion: 1,
   description: 'TODO: one line about the app.',
   license: 'MIT',
 }));

@@ -36,11 +36,6 @@ jobs:
           else
             base="${{ github.event.before }}"
           fi
-          # The app schema is local, so changing it can affect every app: validate everything then.
-          if git diff --name-only "$base" HEAD | grep -q '^schema/'; then
-            npm run validate
-          else
-            apps=$(git diff --name-only "$base" HEAD -- apps | awk -F/ 'NF>=5 {print $1"/"$2"/"$3"/"$4}' | sort -u)
-            if [ -z "$apps" ]; then echo "No app changes."; exit 0; fi
-            node scripts/validate.mjs $apps
-          fi
+          apps=$(git diff --name-only "$base" HEAD -- apps | awk -F/ 'NF>=5 {print $1"/"$2"/"$3"/"$4}' | sort -u)
+          if [ -z "$apps" ]; then echo "No app changes."; exit 0; fi
+          node scripts/validate.mjs $apps

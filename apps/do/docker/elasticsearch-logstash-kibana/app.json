@@ -1,7 +1,5 @@
 {
-  "$schema": "https://tdk-landscape.github.io/schema.app.json",
   "name": "@docker/elasticsearch-logstash-kibana",
-  "schemaVersion": 1,
   "description": "Docker sample: elasticsearch-logstash-kibana. Multi-service example from docker/awesome-compose.",
   "repository": "https://github.com/docker/awesome-compose/tree/master/elasticsearch-logstash-kibana",
   "license": "CC0-1.0",

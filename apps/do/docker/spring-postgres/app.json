@@ -1,7 +1,5 @@
 {
-  "$schema": "https://tdk-landscape.github.io/schema.app.json",
   "name": "@docker/spring-postgres",
-  "schemaVersion": 1,
   "description": "Docker sample: spring-postgres. Multi-service example from docker/awesome-compose.",
   "repository": "https://github.com/docker/awesome-compose/tree/master/spring-postgres",
   "license": "CC0-1.0",

@@ -21,9 +21,7 @@ const service = (appName, extra = {}) => ({
   ...extra,
 });
 const appJson = (owner, app) => ({
-  $schema: 'https://tdk-landscape.github.io/schema.app.json',
   name: `@${owner}/${app}`,
-  schemaVersion: 1,
 });
 
 /** Writes an app tree under a temp root. files: { "services/x/service.json": obj | string } */

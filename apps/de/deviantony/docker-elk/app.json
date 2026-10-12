@@ -1,7 +1,5 @@
 {
-  "$schema": "https://tdk-landscape.github.io/schema.app.json",
   "name": "@deviantony/docker-elk",
-  "schemaVersion": 1,
   "description": "The Elastic stack (ELK) powered by Docker and Compose.",
   "repository": "https://github.com/deviantony/docker-elk",
   "license": "MIT",

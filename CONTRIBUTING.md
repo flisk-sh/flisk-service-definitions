@@ -8,9 +8,7 @@
 
    ```json
    {
-     "$schema": "https://tdk-landscape.github.io/schema.app.json",
      "name": "@your-owner/your-app",
-     "schemaVersion": 1,
      "description": "What the app does.",
      "license": "MIT"
    }

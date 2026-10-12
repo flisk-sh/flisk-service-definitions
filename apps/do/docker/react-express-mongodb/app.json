@@ -1,7 +1,5 @@
 {
-  "$schema": "https://tdk-landscape.github.io/schema.app.json",
   "name": "@docker/react-express-mongodb",
-  "schemaVersion": 1,
   "description": "Docker sample: react-express-mongodb. Multi-service example from docker/awesome-compose.",
   "repository": "https://github.com/docker/awesome-compose/tree/master/react-express-mongodb",
   "license": "CC0-1.0",

@@ -1,7 +1,5 @@
 {
-  "$schema": "https://tdk-landscape.github.io/schema.app.json",
   "name": "@schenkd/nginx-ui",
-  "schemaVersion": 1,
   "description": "Nginx UI allows you to access and modify the nginx configurations files without cli. ",
   "repository": "https://github.com/schenkd/nginx-ui",
   "license": "MIT",

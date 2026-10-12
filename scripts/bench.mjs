@@ -14,7 +14,7 @@ for (let i = 0; i < count; i++) {
   const app = `app-${i}`;
   const base = join(root, 'apps', shardFor(owner), owner, app);
   await mkdir(join(base, 'services', `${app}-api`), { recursive: true });
-  await writeFile(join(base, 'app.json'), canonicalJson({ $schema: 'https://tdk-landscape.github.io/schema.app.json', name: `@${owner}/${app}`, schemaVersion: 1 }));
+  await writeFile(join(base, 'app.json'), canonicalJson({ name: `@${owner}/${app}` }));
   await writeFile(join(base, 'services', `${app}-api`, 'service.json'), canonicalJson({
     $schema: SCHEMA, schemaVersion: 1, appName: `${app}-api`, appType: 'backend', stack: 'bench', port: 4000, healthCheckPath: '/health', dependsOn: [],
   }));

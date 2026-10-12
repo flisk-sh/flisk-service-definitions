@@ -1,7 +1,5 @@
 {
-  "$schema": "https://tdk-landscape.github.io/schema.app.json",
   "name": "@afteracademy/nodejs-backend-architecture-typescript",
-  "schemaVersion": 1,
   "description": "Node.js Backend Architecture Typescript - Learn to build a backend server for production ready blogging platform like Medium and FreeCodeCamp. Main Features: Role based, Express.js, Mongoose, Redis, Mongodb, Joi, Docker, JWT, Unit Tests, Integration Tests.",
   "repository": "https://github.com/afteracademy/nodejs-backend-architecture-typescript",
   "license": "Apache-2.0",

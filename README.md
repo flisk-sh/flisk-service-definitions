@@ -53,7 +53,7 @@ The validator loads the service schema from the published copy at https://tdk-la
 
 The source of truth is `engine/schemas/service-schema.json` in [tdk-cli-core](https://github.com/tdk-landscape/tdk-cli-core). The published copy is synced from there. Do not edit the schema in this repo.
 
-The app schema (`schema/app.schema.json`) is specific to this registry and lives here.
+`app.json` is registry metadata (name, description, license, repository, and the commit the services were imported from). It is not part of the TDK runtime contract, and it has no schema. The validator only checks that its `name` matches the directory path.
 
 ## Use a definition
 

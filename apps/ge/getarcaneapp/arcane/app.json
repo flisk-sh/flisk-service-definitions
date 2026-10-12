@@ -1,7 +1,5 @@
 {
-  "$schema": "https://tdk-landscape.github.io/schema.app.json",
   "name": "@getarcaneapp/arcane",
-  "schemaVersion": 1,
   "description": "Modern Docker Management, Designed for Everyone",
   "repository": "https://github.com/getarcaneapp/arcane",
   "license": "BSD-3-Clause",
