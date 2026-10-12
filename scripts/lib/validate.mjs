@@ -7,7 +7,6 @@ const REPO_ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
 // The service schema is read from the published copy, which is synced from tdk-cli-core.
 // Override with TDK_SERVICE_SCHEMA_URL to test against another build.
 export const SERVICE_SCHEMA_URL = process.env.TDK_SERVICE_SCHEMA_URL ?? 'https://tdk-landscape.github.io/schema.service.json';
-export const APP_SCHEMA_PATH = join(REPO_ROOT, 'schema', 'app.schema.json');
 
 // Secrets belong in the project .env, never in service.json (see schema "secrets" description).
 export const SECRET_KEY_PATTERN = /(SECRET|PASSWORD|PASSWD|TOKEN|API_?KEY|PRIVATE_KEY)/i;
@@ -65,15 +64,12 @@ export function appsForPaths(paths) {
 }
 
 export async function createValidator() {
-  const ajv = new Ajv({ allErrors: true, strict: false });
   const response = await fetch(SERVICE_SCHEMA_URL);
   if (!response.ok) throw new Error(`cannot load service schema from ${SERVICE_SCHEMA_URL}: HTTP ${response.status}`);
-  const serviceSchema = await response.json();
-  const appSchema = JSON.parse(await readFile(APP_SCHEMA_PATH, 'utf8'));
+  const schema = await response.json();
   return {
-    service: ajv.compile(serviceSchema),
-    app: ajv.compile(appSchema),
-    knownServiceKeys: new Set(Object.keys(serviceSchema.properties)),
+    service: new Ajv({ allErrors: true, strict: false }).compile(schema),
+    knownServiceKeys: new Set(Object.keys(schema.properties)),
   };
 }
 
@@ -127,7 +123,6 @@ export async function validateApp(rootDir, appRel, validator, { fix = false } = 
   const appJsonRel = join(appRel, 'app.json');
   const { raw: appRaw, doc: appDoc } = await readJson(appFile, appJsonRel, errors);
   if (appDoc) {
-    if (!validator.app(appDoc)) schemaErrors(validator.app, appJsonRel, errors);
     if (appDoc.name !== `@${owner}/${app}`) {
       errors.push(`${appJsonRel}: name "${appDoc.name}" must be "@${owner}/${app}"`);
     }

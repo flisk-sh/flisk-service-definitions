@@ -4,7 +4,9 @@ A community registry of TDK Landscape apps. Each app publishes its `service.json
 
 ## Current apps
 
-These 11 apps were imported from public docker-compose repositories with `tdk-import` and then schema-validated. **They have not been runtime-tested.** Nobody has run `tdk up` on them yet, so treat them as seed data, not verified examples.
+These 21 apps were imported with `tdk-import` and then schema-validated. The first 11 come from public docker-compose repositories; the `docker/*` samples come from [docker/awesome-compose](https://github.com/docker/awesome-compose) (CC0). **None of them has been runtime-tested.** Nobody has run `tdk up` on them yet, so treat them as seed data, not verified examples.
+
+The importer assigns each service a port in 4000–5999. A container that listens on its original port (80, 3000, 8080, ...) will not answer on the assigned port until it reads `$PORT`. Each service's manifest is valid, but a working setup may need that change first.
 
 | App | Services | What it is | Source |
 | --- | --- | --- | --- |
@@ -19,6 +21,16 @@ These 11 apps were imported from public docker-compose repositories with `tdk-im
 | [`@schenkd/nginx-ui`](apps/sc/schenkd/nginx-ui) | 2 | Web UI for editing nginx configuration | [repo](https://github.com/schenkd/nginx-ui) |
 | [`@speaches-ai/speaches`](apps/sp/speaches-ai/speaches) | 6 | Speaches stack with Prometheus, Loki, Tempo and an OpenTelemetry collector | [repo](https://github.com/speaches-ai/speaches) |
 | [`@vegasbrianc/prometheus`](apps/ve/vegasbrianc/prometheus) | 5 | Prometheus monitoring stack | [repo](https://github.com/vegasbrianc/prometheus) |
+| [`@docker/nginx-flask-mysql`](apps/do/docker/nginx-flask-mysql) | 3 | Flask app behind nginx, with MySQL | [sample](https://github.com/docker/awesome-compose/tree/master/nginx-flask-mysql) |
+| [`@docker/nginx-golang-postgres`](apps/do/docker/nginx-golang-postgres) | 3 | Go app behind nginx, with Postgres | [sample](https://github.com/docker/awesome-compose/tree/master/nginx-golang-postgres) |
+| [`@docker/react-express-mysql`](apps/do/docker/react-express-mysql) | 3 | React frontend, Express API, MySQL | [sample](https://github.com/docker/awesome-compose/tree/master/react-express-mysql) |
+| [`@docker/react-express-mongodb`](apps/do/docker/react-express-mongodb) | 3 | React frontend, Express API, MongoDB | [sample](https://github.com/docker/awesome-compose/tree/master/react-express-mongodb) |
+| [`@docker/nextcloud-redis-mariadb`](apps/do/docker/nextcloud-redis-mariadb) | 3 | Nextcloud with Redis and MariaDB | [sample](https://github.com/docker/awesome-compose/tree/master/nextcloud-redis-mariadb) |
+| [`@docker/spring-postgres`](apps/do/docker/spring-postgres) | 2 | Spring Boot app with Postgres | [sample](https://github.com/docker/awesome-compose/tree/master/spring-postgres) |
+| [`@docker/nginx-nodejs-redis`](apps/do/docker/nginx-nodejs-redis) | 4 | Node.js app behind nginx, with Redis | [sample](https://github.com/docker/awesome-compose/tree/master/nginx-nodejs-redis) |
+| [`@docker/gitea-postgres`](apps/do/docker/gitea-postgres) | 2 | Gitea Git server with Postgres | [sample](https://github.com/docker/awesome-compose/tree/master/gitea-postgres) |
+| [`@docker/prometheus-grafana`](apps/do/docker/prometheus-grafana) | 2 | Prometheus and Grafana monitoring | [sample](https://github.com/docker/awesome-compose/tree/master/prometheus-grafana) |
+| [`@docker/elasticsearch-logstash-kibana`](apps/do/docker/elasticsearch-logstash-kibana) | 3 | Elasticsearch, Logstash and Kibana logging | [sample](https://github.com/docker/awesome-compose/tree/master/elasticsearch-logstash-kibana) |
 
 Single-container tools, PaaS installers and full development environments were left out of the first batch on purpose.
 
@@ -41,7 +53,7 @@ The validator loads the service schema from the published copy at https://tdk-la
 
 The source of truth is `engine/schemas/service-schema.json` in [tdk-cli-core](https://github.com/tdk-landscape/tdk-cli-core). The published copy is synced from there. Do not edit the schema in this repo.
 
-The app schema (`schema/app.schema.json`) is specific to this registry and lives here.
+`app.json` is registry metadata (name, description, license, repository, and the commit the services were imported from). It is not part of the TDK runtime contract, and it has no schema. The validator only checks that its `name` matches the directory path.
 
 ## Use a definition
 

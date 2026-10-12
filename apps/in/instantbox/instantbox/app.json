@@ -1,7 +1,5 @@
 {
-  "$schema": "https://tdk-landscape.github.io/schema.app.json",
   "name": "@instantbox/instantbox",
-  "schemaVersion": 1,
   "description": "📦 Get a clean, ready-to-go Linux box in seconds.",
   "repository": "https://github.com/instantbox/instantbox",
   "license": "MIT",

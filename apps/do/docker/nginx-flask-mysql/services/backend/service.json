@@ -1,0 +1,14 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "backend",
+  "appType": "bring-your-own",
+  "stack": "nginx-flask-mysql",
+  "port": 4001,
+  "healthCheckPath": "/",
+  "buildContext": "../../../backend",
+  "dockerfile": "Dockerfile",
+  "dependsOn": [
+    "db-svc"
+  ]
+}

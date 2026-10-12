@@ -1,0 +1,10 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "gitea",
+  "appType": "bring-your-own",
+  "stack": "gitea-postgres",
+  "port": 4001,
+  "healthCheckPath": "/",
+  "image": "gitea/gitea:latest"
+}

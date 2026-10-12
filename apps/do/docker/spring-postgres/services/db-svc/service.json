@@ -1,0 +1,10 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "db-svc",
+  "appType": "bring-your-own",
+  "stack": "spring-postgres",
+  "port": 4000,
+  "image": "postgres",
+  "exposeViaProxy": false
+}
