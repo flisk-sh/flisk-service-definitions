@@ -1,0 +1,10 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "elasticsearch",
+  "appType": "bring-your-own",
+  "stack": "elasticsearch-logstash-kibana",
+  "port": 4000,
+  "image": "elasticsearch:7.16.1",
+  "exposeViaProxy": false
+}

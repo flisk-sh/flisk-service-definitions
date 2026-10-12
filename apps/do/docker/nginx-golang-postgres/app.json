@@ -1,0 +1,9 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.app.json",
+  "name": "@docker/nginx-golang-postgres",
+  "schemaVersion": 1,
+  "description": "Docker sample: nginx-golang-postgres. Multi-service example from docker/awesome-compose.",
+  "repository": "https://github.com/docker/awesome-compose/tree/master/nginx-golang-postgres",
+  "license": "CC0-1.0",
+  "sourceCommit": "30f4b7f6a6c3b0c0ecf4d4efb0de203c48d11562"
+}

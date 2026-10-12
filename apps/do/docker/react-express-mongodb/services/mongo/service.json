@@ -1,0 +1,10 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "mongo",
+  "appType": "bring-your-own",
+  "stack": "react-express-mongodb",
+  "port": 4000,
+  "image": "mongo:4.2.0",
+  "exposeViaProxy": false
+}

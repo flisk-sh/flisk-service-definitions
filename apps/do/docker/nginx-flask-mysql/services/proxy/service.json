@@ -1,0 +1,14 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "proxy",
+  "appType": "bring-your-own",
+  "stack": "nginx-flask-mysql",
+  "port": 4002,
+  "healthCheckPath": "/",
+  "buildContext": "../../../proxy",
+  "dockerfile": "Dockerfile",
+  "dependsOn": [
+    "backend"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "backend",
+  "appType": "bring-your-own",
+  "stack": "react-express-mongodb",
+  "port": 4001,
+  "buildContext": "../../../backend",
+  "dockerfile": "Dockerfile",
+  "exposeViaProxy": false,
+  "dependsOn": [
+    "mongo"
+  ]
+}
