@@ -1,9 +1,0 @@
-{
-  "$schema": "https://tdk-landscape.github.io/schema.app.json",
-  "name": "@louislam/dockge",
-  "schemaVersion": 1,
-  "description": "A fancy, easy-to-use and reactive self-hosted docker compose.yaml stack-oriented manager",
-  "repository": "https://github.com/louislam/dockge",
-  "license": "MIT",
-  "sourceCommit": "f809ae192b571944ad773e9866d3e67064ae8043"
-}

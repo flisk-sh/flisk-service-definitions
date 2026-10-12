@@ -1,9 +1,0 @@
-{
-  "$schema": "https://tdk-landscape.github.io/schema.app.json",
-  "name": "@opendevops-cn/opendevops",
-  "schemaVersion": 1,
-  "description": "CODO是一款为用户提供企业多混合云、全球一站式DevOps、自动化运维、完全开源的云管理平台、自动化运维平台",
-  "repository": "https://github.com/opendevops-cn/opendevops",
-  "license": "GPL-3.0",
-  "sourceCommit": "89b759254c8dac96fd1a99d5f0726799ab54e369"
-}

@@ -1,9 +1,0 @@
-{
-  "$schema": "https://tdk-landscape.github.io/schema.app.json",
-  "name": "@composerize/composerize",
-  "schemaVersion": 1,
-  "description": "🏃→🎼  docker run asdlksjfksdf > docker-composerize up",
-  "repository": "https://github.com/composerize/composerize",
-  "license": "MIT",
-  "sourceCommit": "3e39eb7c329e59d2f93a171878dad75f8ca9d666"
-}

@@ -1,9 +1,0 @@
-{
-  "$schema": "https://tdk-landscape.github.io/schema.app.json",
-  "name": "@mailcow/mailcow-dockerized",
-  "schemaVersion": 1,
-  "description": "mailcow: dockerized - 🐮 + 🐋 = 💕",
-  "repository": "https://github.com/mailcow/mailcow-dockerized",
-  "license": "GPL-3.0",
-  "sourceCommit": "81f6f7b002f2681b732aed74ae53179377def5e0"
-}

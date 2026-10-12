@@ -1,9 +1,0 @@
-{
-  "$schema": "https://tdk-landscape.github.io/schema.app.json",
-  "name": "@leandromoreira/cdn-up-and-running",
-  "schemaVersion": 1,
-  "description": "CDN Up and Running - Building a CDN from Scratch to Learn about CDN, Nginx, Lua, Prometheus, Grafana, Load balancing, and Containers.",
-  "repository": "https://github.com/leandromoreira/cdn-up-and-running",
-  "license": "BSD-3-Clause",
-  "sourceCommit": "cab10ba90833eac1831cde462f94187184bfc4cd"
-}
