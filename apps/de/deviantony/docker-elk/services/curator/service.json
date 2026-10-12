@@ -5,8 +5,5 @@
   "appType": "bring-your-own",
   "stack": "docker-elk",
   "port": 4000,
-  "dockerfile": "Dockerfile",
-  "dev": {
-    "command": "-f -d8"
-  }
+  "dockerfile": "Dockerfile"
 }

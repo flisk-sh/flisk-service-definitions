@@ -5,8 +5,5 @@
   "appType": "bring-your-own",
   "stack": "nodejs-backend-architecture-typescript",
   "port": 4001,
-  "image": "mongo:8.3.2",
-  "dev": {
-    "command": "mongod --bind_ip_all"
-  }
+  "image": "mongo:8.3.2"
 }

@@ -5,8 +5,5 @@
   "appType": "bring-your-own",
   "stack": "arcane",
   "port": 4008,
-  "image": "otel/opentelemetry-collector-contrib:latest",
-  "dev": {
-    "command": "--config=/etc/otelcol/config.yaml"
-  }
+  "image": "otel/opentelemetry-collector-contrib:latest"
 }

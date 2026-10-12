@@ -12,7 +12,6 @@
     "validate": "node scripts/validate.mjs",
     "format": "node scripts/validate.mjs --fix",
     "test": "node --test \"test/**/*.test.mjs\"",
-    "sync-schema": "node scripts/sync-schema.mjs",
     "bench": "node scripts/bench.mjs"
   },
   "dependencies": {

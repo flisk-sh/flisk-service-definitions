@@ -5,8 +5,5 @@
   "appType": "bring-your-own",
   "stack": "speaches",
   "port": 4001,
-  "image": "grafana/loki:3.5.5",
-  "dev": {
-    "command": "-config.file=/etc/loki.yaml"
-  }
+  "image": "grafana/loki:3.5.5"
 }
