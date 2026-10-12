@@ -36,7 +36,7 @@ jobs:
           else
             base="${{ github.event.before }}"
           fi
-          # Changed schema files affect every app, so validate everything in that case.
+          # The app schema is local, so changing it can affect every app: validate everything then.
           if git diff --name-only "$base" HEAD | grep -q '^schema/'; then
             npm run validate
           else

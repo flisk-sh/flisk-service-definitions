@@ -4,7 +4,9 @@ import { fileURLToPath } from 'node:url';
 import Ajv from 'ajv';
 
 const REPO_ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
-export const SERVICE_SCHEMA_PATH = join(REPO_ROOT, 'schema', 'service.schema.json');
+// The service schema is read from the published copy, which is synced from tdk-cli-core.
+// Override with TDK_SERVICE_SCHEMA_URL to test against another build.
+export const SERVICE_SCHEMA_URL = process.env.TDK_SERVICE_SCHEMA_URL ?? 'https://tdk-landscape.github.io/schema.service.json';
 export const APP_SCHEMA_PATH = join(REPO_ROOT, 'schema', 'app.schema.json');
 
 // Secrets belong in the project .env, never in service.json (see schema "secrets" description).
@@ -64,7 +66,9 @@ export function appsForPaths(paths) {
 
 export async function createValidator() {
   const ajv = new Ajv({ allErrors: true, strict: false });
-  const serviceSchema = JSON.parse(await readFile(SERVICE_SCHEMA_PATH, 'utf8'));
+  const response = await fetch(SERVICE_SCHEMA_URL);
+  if (!response.ok) throw new Error(`cannot load service schema from ${SERVICE_SCHEMA_URL}: HTTP ${response.status}`);
+  const serviceSchema = await response.json();
   const appSchema = JSON.parse(await readFile(APP_SCHEMA_PATH, 'utf8'));
   return {
     service: ajv.compile(serviceSchema),

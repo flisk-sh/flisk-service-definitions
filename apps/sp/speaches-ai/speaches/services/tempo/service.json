@@ -5,8 +5,5 @@
   "appType": "bring-your-own",
   "stack": "speaches",
   "port": 4004,
-  "image": "grafana/tempo:2.8.2",
-  "dev": {
-    "command": "-config.file=/etc/tempo.yaml"
-  }
+  "image": "grafana/tempo:2.8.2"
 }

@@ -5,8 +5,5 @@
   "appType": "bring-your-own",
   "stack": "arcane",
   "port": 4010,
-  "dockerfile": "./Dockerfile",
-  "dev": {
-    "command": "vp dev --port 3000 --host"
-  }
+  "dockerfile": "./Dockerfile"
 }

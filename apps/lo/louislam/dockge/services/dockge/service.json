@@ -5,8 +5,5 @@
   "appType": "bring-your-own",
   "stack": "dockge",
   "port": 4000,
-  "dockerfile": "./Dockerfile",
-  "dev": {
-    "command": "tsx ./backend/index.ts"
-  }
+  "dockerfile": "./Dockerfile"
 }

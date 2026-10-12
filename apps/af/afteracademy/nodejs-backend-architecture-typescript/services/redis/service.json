@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "nodejs-backend-architecture-typescript",
   "port": 4002,
-  "image": "redis:8.8.0",
-  "dev": {}
+  "image": "redis:8.8.0"
 }

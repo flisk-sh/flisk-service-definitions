@@ -5,8 +5,5 @@
   "appType": "bring-your-own",
   "stack": "speaches",
   "port": 4003,
-  "dockerfile": "Dockerfile",
-  "dev": {
-    "command": "uvicorn --factory speaches.main:create_app"
-  }
+  "dockerfile": "Dockerfile"
 }

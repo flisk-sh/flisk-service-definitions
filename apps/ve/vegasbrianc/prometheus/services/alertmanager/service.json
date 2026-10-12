@@ -5,8 +5,5 @@
   "appType": "bring-your-own",
   "stack": "prometheus",
   "port": 4005,
-  "image": "prom/alertmanager",
-  "dev": {
-    "command": "--config.file=/etc/alertmanager/config.yml --storage.path=/alertmanager"
-  }
+  "image": "prom/alertmanager"
 }

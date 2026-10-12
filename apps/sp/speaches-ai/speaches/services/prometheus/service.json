@@ -5,8 +5,5 @@
   "appType": "bring-your-own",
   "stack": "speaches",
   "port": 4002,
-  "image": "prom/prometheus:v2.55.1",
-  "dev": {
-    "command": "--config.file=/etc/prometheus.yaml"
-  }
+  "image": "prom/prometheus:v2.55.1"
 }

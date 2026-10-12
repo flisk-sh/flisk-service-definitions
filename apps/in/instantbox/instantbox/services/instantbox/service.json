@@ -5,8 +5,5 @@
   "appType": "bring-your-own",
   "stack": "instantbox",
   "port": 4003,
-  "dockerfile": "Dockerfile",
-  "dev": {
-    "command": "inspire.py"
-  }
+  "dockerfile": "Dockerfile"
 }

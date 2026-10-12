@@ -5,8 +5,5 @@
   "appType": "bring-your-own",
   "stack": "nginx-ui",
   "port": 4001,
-  "image": "nginx-ui:latest",
-  "dev": {
-    "command": "--http 0.0.0.0:8080 --wsgi-file wsgi.py --callable app --processes 1 --threads 8"
-  }
+  "image": "nginx-ui:latest"
 }
