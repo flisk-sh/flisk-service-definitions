@@ -4,5 +4,6 @@
   "schemaVersion": 1,
   "repository": "https://github.com/speaches-ai/speaches",
   "license": "MIT",
-  "sourceCommit": "993994f7984bf3fe9655b267448328cf66fccb42"
+  "sourceCommit": "993994f7984bf3fe9655b267448328cf66fccb42",
+  "description": "Speaches stack from the speaches-ai project. See the repository for what it runs."
 }
