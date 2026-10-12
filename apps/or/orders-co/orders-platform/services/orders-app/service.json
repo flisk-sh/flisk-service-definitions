@@ -1,0 +1,11 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "orders-app",
+  "appType": "frontend",
+  "stack": "shop",
+  "port": 3000,
+  "dependsOn": [
+    "orders-api"
+  ]
+}

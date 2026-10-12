@@ -1,0 +1,7 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.app.json",
+  "name": "@orders-co/orders-platform",
+  "schemaVersion": 1,
+  "description": "Example shop app: API, storefront and worker.",
+  "license": "MIT"
+}

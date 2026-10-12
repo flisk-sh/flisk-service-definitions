@@ -1,0 +1,21 @@
+{
+  "name": "tdk-service-definitions",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Community registry of TDK Landscape service.json definitions, validated against the TDK service schema.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "format": "node scripts/validate.mjs --fix",
+    "test": "node --test \"test/**/*.test.mjs\"",
+    "sync-schema": "node scripts/sync-schema.mjs",
+    "bench": "node scripts/bench.mjs"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1"
+  }
+}
