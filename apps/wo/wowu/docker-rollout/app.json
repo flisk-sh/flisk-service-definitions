@@ -1,9 +1,0 @@
-{
-  "$schema": "https://tdk-landscape.github.io/schema.app.json",
-  "name": "@wowu/docker-rollout",
-  "schemaVersion": 1,
-  "description": "🚀 Zero Downtime Deployment for Docker Compose",
-  "repository": "https://github.com/wowu/docker-rollout",
-  "license": "MIT",
-  "sourceCommit": "47d2dc9d45d548fc99c05423a8ec7661af468ac8"
-}

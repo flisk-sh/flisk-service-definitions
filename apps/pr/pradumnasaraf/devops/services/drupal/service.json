@@ -1,9 +1,0 @@
-{
-  "$schema": "https://tdk-landscape.github.io/schema.service.json",
-  "schemaVersion": 1,
-  "appName": "drupal",
-  "appType": "bring-your-own",
-  "stack": "devops",
-  "port": 4001,
-  "dockerfile": "Dockerfile"
-}

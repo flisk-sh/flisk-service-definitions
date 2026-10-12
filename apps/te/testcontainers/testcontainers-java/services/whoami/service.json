@@ -1,9 +1,0 @@
-{
-  "$schema": "https://tdk-landscape.github.io/schema.service.json",
-  "schemaVersion": 1,
-  "appName": "whoami",
-  "appType": "bring-your-own",
-  "stack": "testcontainers-java",
-  "port": 4013,
-  "image": "emilevauge/whoami"
-}

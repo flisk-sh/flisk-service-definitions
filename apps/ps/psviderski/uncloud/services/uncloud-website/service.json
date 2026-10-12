@@ -1,9 +1,0 @@
-{
-  "$schema": "https://tdk-landscape.github.io/schema.service.json",
-  "schemaVersion": 1,
-  "appName": "uncloud-website",
-  "appType": "bring-your-own",
-  "stack": "uncloud",
-  "port": 4005,
-  "image": "uncloud-website"
-}

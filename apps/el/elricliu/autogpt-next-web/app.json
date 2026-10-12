@@ -1,9 +1,0 @@
-{
-  "$schema": "https://tdk-landscape.github.io/schema.app.json",
-  "name": "@elricliu/autogpt-next-web",
-  "schemaVersion": 1,
-  "description": "🤖 Assemble, configure, and deploy autonomous AI Agents in your browser.一键免费部署你的私人AutoGPT 网页应用",
-  "repository": "https://github.com/ElricLiu/AutoGPT-Next-Web",
-  "license": "GPL-3.0",
-  "sourceCommit": "93c325afd54a255e60762b27f77763fc5631b23d"
-}

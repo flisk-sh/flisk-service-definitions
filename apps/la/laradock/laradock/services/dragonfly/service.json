@@ -1,9 +1,0 @@
-{
-  "$schema": "https://tdk-landscape.github.io/schema.service.json",
-  "schemaVersion": 1,
-  "appName": "dragonfly",
-  "appType": "bring-your-own",
-  "stack": "laradock",
-  "port": 4019,
-  "image": "docker.dragonflydb.io/dragonflydb/dragonfly:${DRAGONFLY_VERSION}"
-}

@@ -1,9 +1,0 @@
-{
-  "$schema": "https://tdk-landscape.github.io/schema.app.json",
-  "name": "@winboat-org/winboat",
-  "schemaVersion": 1,
-  "description": "Run Windows apps on 🐧 Linux with ✨ seamless integration",
-  "repository": "https://github.com/winboat-org/winboat",
-  "license": "MIT",
-  "sourceCommit": "b9a2df2cc33b2a5e2dc95b3f0472d832f44e86d3"
-}

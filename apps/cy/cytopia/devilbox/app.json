@@ -1,9 +1,0 @@
-{
-  "$schema": "https://tdk-landscape.github.io/schema.app.json",
-  "name": "@cytopia/devilbox",
-  "schemaVersion": 1,
-  "description": "A modern Docker LAMP stack and MEAN stack for local development",
-  "repository": "https://github.com/cytopia/devilbox",
-  "license": "MIT",
-  "sourceCommit": "986f04637f8210e18e2895d01888040e384c662a"
-}

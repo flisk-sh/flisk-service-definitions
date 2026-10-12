@@ -1,9 +1,0 @@
-{
-  "$schema": "https://tdk-landscape.github.io/schema.service.json",
-  "schemaVersion": 1,
-  "appName": "mailu-front",
-  "appType": "bring-your-own",
-  "stack": "laradock",
-  "port": 4050,
-  "image": "mailu/nginx:${MAILU_VERSION}"
-}
