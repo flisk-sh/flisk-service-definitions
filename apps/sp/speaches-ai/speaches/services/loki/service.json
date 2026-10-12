@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "loki",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xim4ds",
+  "stack": "speaches",
   "port": 4001,
-  "healthCheckPath": "/health",
   "image": "grafana/loki:3.5.5",
   "dev": {
     "command": "-config.file=/etc/loki.yaml"
-  }
+  },
+  "healthCheckPath": "/"
 }

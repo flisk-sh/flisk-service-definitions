@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "netfilter-mailcow",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xtphy5",
+  "stack": "mailcow-dockerized",
   "port": 4006,
-  "healthCheckPath": "/health",
-  "image": "ghcr.io/mailcow/netfilter:1.64"
+  "image": "ghcr.io/mailcow/netfilter:1.64",
+  "healthCheckPath": "/"
 }

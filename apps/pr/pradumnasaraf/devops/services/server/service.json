@@ -3,9 +3,8 @@
   "schemaVersion": 1,
   "appName": "server",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-pbejxo",
+  "stack": "devops",
   "port": 4000,
-  "healthCheckPath": "/health",
-  "buildContext": "../../..",
-  "dockerfile": "Dockerfile"
+  "dockerfile": "Dockerfile",
+  "healthCheckPath": "/"
 }

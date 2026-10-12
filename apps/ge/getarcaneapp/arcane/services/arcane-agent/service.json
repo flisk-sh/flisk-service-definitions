@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "arcane-agent",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-rinypi",
+  "stack": "arcane",
   "port": 4000,
-  "healthCheckPath": "/health",
-  "image": "ghcr.io/getarcaneapp/agent:latest"
+  "image": "ghcr.io/getarcaneapp/agent:latest",
+  "healthCheckPath": "/"
 }

@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "ollama",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4071,
-  "healthCheckPath": "/health",
-  "image": "ollama/ollama:${OLLAMA_VERSION}"
+  "image": "ollama/ollama:${OLLAMA_VERSION}",
+  "healthCheckPath": "/"
 }

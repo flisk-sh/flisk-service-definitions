@@ -3,9 +3,8 @@
   "schemaVersion": 1,
   "appName": "docker-setup",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-pbejxo",
+  "stack": "devops",
   "port": 4003,
-  "healthCheckPath": "/health",
-  "buildContext": "../../../docs/jenkins/docker-setup",
-  "dockerfile": "Dockerfile"
+  "dockerfile": "Dockerfile",
+  "healthCheckPath": "/"
 }

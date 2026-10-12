@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "mysql",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4068,
-  "healthCheckPath": "/health",
-  "dockerfile": "./Dockerfile"
+  "dockerfile": "./Dockerfile",
+  "healthCheckPath": "/"
 }

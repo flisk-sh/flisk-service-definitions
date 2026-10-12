@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "percona",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4078,
-  "healthCheckPath": "/health",
-  "dockerfile": "./Dockerfile"
+  "dockerfile": "./Dockerfile",
+  "healthCheckPath": "/"
 }

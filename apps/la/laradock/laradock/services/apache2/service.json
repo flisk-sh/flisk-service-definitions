@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "apache2",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4004,
-  "healthCheckPath": "/health",
   "dockerfile": "./Dockerfile",
   "dependsOn": [
     "php-fpm"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "typesense",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4109,
-  "healthCheckPath": "/health",
-  "image": "typesense/typesense:${TYPESENSE_VERSION}"
+  "image": "typesense/typesense:${TYPESENSE_VERSION}",
+  "healthCheckPath": "/"
 }

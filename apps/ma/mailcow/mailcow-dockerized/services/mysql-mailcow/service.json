@@ -3,12 +3,12 @@
   "schemaVersion": 1,
   "appName": "mysql-mailcow",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xtphy5",
+  "stack": "mailcow-dockerized",
   "port": 4005,
-  "healthCheckPath": "/health",
   "image": "mariadb:10.11",
   "dependsOn": [
     "netfilter-mailcow",
     "unbound-mailcow"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

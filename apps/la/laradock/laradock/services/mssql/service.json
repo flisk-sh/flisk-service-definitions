@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "mssql",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4067,
-  "healthCheckPath": "/health",
-  "dockerfile": "./Dockerfile"
+  "dockerfile": "./Dockerfile",
+  "healthCheckPath": "/"
 }

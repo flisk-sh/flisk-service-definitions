@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "mailpit",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-shmf9y",
+  "stack": "coolify",
   "port": 4002,
-  "healthCheckPath": "/health",
-  "image": "axllent/mailpit:latest"
+  "image": "axllent/mailpit:latest",
+  "healthCheckPath": "/"
 }

@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "litellm",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4036,
-  "healthCheckPath": "/health",
   "image": "ghcr.io/berriai/litellm:${LITELLM_VERSION}",
   "dev": {
     "command": "--config /app/config.yaml --port 4000"
-  }
+  },
+  "healthCheckPath": "/"
 }

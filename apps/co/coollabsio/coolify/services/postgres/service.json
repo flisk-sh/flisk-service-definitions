@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "postgres",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-shmf9y",
+  "stack": "coolify",
   "port": 4001,
-  "healthCheckPath": "/health",
-  "image": "postgres:15-alpine"
+  "image": "postgres:15-alpine",
+  "healthCheckPath": "/"
 }

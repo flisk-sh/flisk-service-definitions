@@ -3,12 +3,10 @@
   "schemaVersion": 1,
   "appName": "landing",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-jvdbdd",
+  "stack": "uncloud",
   "port": 4007,
-  "healthCheckPath": "/health",
-  "buildContext": "../../../website/landing",
-  "dockerfile": "../../services/tdk-crawl-jvdbdd/landing/Dockerfile",
   "dev": {
     "command": "npx tailwindcss -i ./css/style.css -o ./style.css --watch"
-  }
+  },
+  "healthCheckPath": "/"
 }

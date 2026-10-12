@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "open-webui",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4074,
-  "healthCheckPath": "/health",
-  "image": "ghcr.io/open-webui/open-webui:${OPEN_WEBUI_VERSION}"
+  "image": "ghcr.io/open-webui/open-webui:${OPEN_WEBUI_VERSION}",
+  "healthCheckPath": "/"
 }

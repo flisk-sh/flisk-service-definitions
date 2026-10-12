@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "frontend",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-45ivux",
+  "stack": "instantbox",
   "port": 4001,
-  "healthCheckPath": "/health",
-  "image": "instantbox/instantbox-frontend:latest"
+  "image": "instantbox/instantbox-frontend:latest",
+  "healthCheckPath": "/"
 }

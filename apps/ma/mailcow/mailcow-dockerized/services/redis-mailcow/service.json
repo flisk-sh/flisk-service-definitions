@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "redis-mailcow",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xtphy5",
+  "stack": "mailcow-dockerized",
   "port": 4013,
-  "healthCheckPath": "/health",
   "image": "redis:7.4.11-alpine",
   "dependsOn": [
     "netfilter-mailcow"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

@@ -3,12 +3,12 @@
   "schemaVersion": 1,
   "appName": "graylog",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4027,
-  "healthCheckPath": "/health",
   "dockerfile": "./Dockerfile",
   "dependsOn": [
     "elasticsearch",
     "mongo"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

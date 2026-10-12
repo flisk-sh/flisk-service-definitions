@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "neo4j",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4062,
-  "healthCheckPath": "/health",
-  "image": "neo4j:latest"
+  "image": "neo4j:latest",
+  "healthCheckPath": "/"
 }

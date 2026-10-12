@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "localai",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4040,
-  "healthCheckPath": "/health",
-  "image": "localai/localai:${LOCALAI_VERSION}"
+  "image": "localai/localai:${LOCALAI_VERSION}",
+  "healthCheckPath": "/"
 }

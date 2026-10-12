@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "mongo-webui",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4065,
-  "healthCheckPath": "/health",
   "dockerfile": "./Dockerfile",
   "dependsOn": [
     "mongo"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

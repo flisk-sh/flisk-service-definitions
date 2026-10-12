@@ -3,14 +3,14 @@
   "schemaVersion": 1,
   "appName": "prometheus",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-dh9agf",
+  "stack": "prometheus",
   "port": 4003,
-  "healthCheckPath": "/health",
   "image": "prom/prometheus:v2.1.0",
   "dependsOn": [
     "cadvisor"
   ],
   "dev": {
     "command": "--config.file=/etc/prometheus/prometheus.yml --storage.tsdb.path=/prometheus --web.console.libraries=/usr/share/prometheus/console_libraries --web.console.templates=/usr/share/prometheus/consoles"
-  }
+  },
+  "healthCheckPath": "/"
 }

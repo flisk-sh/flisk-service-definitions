@@ -3,12 +3,12 @@
   "schemaVersion": 1,
   "appName": "httpd",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xym24y",
+  "stack": "devilbox",
   "port": 4001,
-  "healthCheckPath": "/health",
   "image": "devilbox/${HTTPD_SERVER}:${HTTPD_FLAVOUR:-alpine}-1.0",
   "dependsOn": [
     "bind",
     "php"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

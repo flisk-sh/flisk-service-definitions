@@ -3,12 +3,11 @@
   "schemaVersion": 1,
   "appName": "clamd",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xtphy5",
+  "stack": "mailcow-dockerized",
   "port": 4020,
-  "healthCheckPath": "/health",
-  "buildContext": "../../../data/Dockerfiles/clamd",
   "dockerfile": "Dockerfile",
   "dev": {
     "command": "/sbin/tini -g -- /clamd.sh"
-  }
+  },
+  "healthCheckPath": "/"
 }

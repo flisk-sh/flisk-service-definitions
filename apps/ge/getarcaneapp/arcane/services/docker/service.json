@@ -3,12 +3,11 @@
   "schemaVersion": 1,
   "appName": "docker",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-rinypi",
+  "stack": "arcane",
   "port": 4004,
-  "healthCheckPath": "/health",
-  "buildContext": "../../../docker",
   "dockerfile": "Dockerfile",
   "dev": {
     "command": "./arcane"
-  }
+  },
+  "healthCheckPath": "/"
 }

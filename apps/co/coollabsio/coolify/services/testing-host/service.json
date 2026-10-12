@@ -3,12 +3,11 @@
   "schemaVersion": 1,
   "appName": "testing-host",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-shmf9y",
+  "stack": "coolify",
   "port": 4011,
-  "healthCheckPath": "/health",
-  "buildContext": "../../../docker/testing-host",
   "dockerfile": "Dockerfile",
   "dev": {
     "command": "/usr/sbin/sshd -D -o ListenAddress=0.0.0.0 -o Port=22"
-  }
+  },
+  "healthCheckPath": "/"
 }

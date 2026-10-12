@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "clamd-mailcow",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xtphy5",
+  "stack": "mailcow-dockerized",
   "port": 4001,
-  "healthCheckPath": "/health",
   "image": "ghcr.io/mailcow/clamd:1.4.6-1",
   "dependsOn": [
     "unbound-mailcow"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

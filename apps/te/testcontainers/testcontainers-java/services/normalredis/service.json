@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "normalredis",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-w2iniy",
+  "stack": "testcontainers-java",
   "port": 4002,
-  "healthCheckPath": "/health",
-  "image": "redis:7.0-alpine"
+  "image": "redis:7.0-alpine",
+  "healthCheckPath": "/"
 }

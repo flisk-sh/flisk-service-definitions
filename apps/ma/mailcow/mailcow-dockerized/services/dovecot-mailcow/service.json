@@ -3,13 +3,13 @@
   "schemaVersion": 1,
   "appName": "dovecot-mailcow",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xtphy5",
+  "stack": "mailcow-dockerized",
   "port": 4003,
-  "healthCheckPath": "/health",
   "image": "ghcr.io/mailcow/dovecot:2.3.21.1-2",
   "dependsOn": [
     "mysql-mailcow",
     "netfilter-mailcow",
     "redis-mailcow"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

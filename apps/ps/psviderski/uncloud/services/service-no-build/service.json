@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "service-no-build",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-jvdbdd",
+  "stack": "uncloud",
   "port": 4001,
-  "healthCheckPath": "/health",
-  "image": "portainer/pause:3.9"
+  "image": "portainer/pause:3.9",
+  "healthCheckPath": "/"
 }

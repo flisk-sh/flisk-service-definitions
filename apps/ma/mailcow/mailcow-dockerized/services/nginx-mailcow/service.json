@@ -3,14 +3,14 @@
   "schemaVersion": 1,
   "appName": "nginx-mailcow",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xtphy5",
+  "stack": "mailcow-dockerized",
   "port": 4007,
-  "healthCheckPath": "/health",
   "image": "ghcr.io/mailcow/nginx:1.30.4-1",
   "dependsOn": [
     "php-fpm-mailcow",
     "redis-mailcow",
     "rspamd-mailcow",
     "sogo-mailcow"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

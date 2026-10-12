@@ -3,14 +3,14 @@
   "schemaVersion": 1,
   "appName": "php-fpm-mailcow",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xtphy5",
+  "stack": "mailcow-dockerized",
   "port": 4010,
-  "healthCheckPath": "/health",
   "image": "ghcr.io/mailcow/phpfpm:8.2.29-3",
   "dependsOn": [
     "redis-mailcow"
   ],
   "dev": {
     "command": "php-fpm -d date.timezone=${TZ} -d expose_php=0"
-  }
+  },
+  "healthCheckPath": "/"
 }

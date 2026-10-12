@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "blackfire",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4007,
-  "healthCheckPath": "/health",
   "image": "blackfire/blackfire",
   "dependsOn": [
     "php-fpm"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

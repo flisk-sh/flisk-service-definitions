@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "tempo",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xim4ds",
+  "stack": "speaches",
   "port": 4004,
-  "healthCheckPath": "/health",
   "image": "grafana/tempo:2.8.2",
   "dev": {
     "command": "-config.file=/etc/tempo.yaml"
-  }
+  },
+  "healthCheckPath": "/"
 }

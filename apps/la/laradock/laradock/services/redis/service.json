@@ -3,11 +3,9 @@
   "schemaVersion": 1,
   "appName": "redis",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4092,
-  "healthCheckPath": "/health",
   "dockerfile": "./Dockerfile",
-  "dev": {
-    "command": "--requirepass ${REDIS_PASSWORD}"
-  }
+  "dev": {},
+  "healthCheckPath": "/"
 }

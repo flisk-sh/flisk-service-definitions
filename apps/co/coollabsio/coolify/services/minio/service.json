@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "minio",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-shmf9y",
+  "stack": "coolify",
   "port": 4003,
-  "healthCheckPath": "/health",
-  "image": "coollabsio/maxio:latest"
+  "image": "coollabsio/maxio:latest",
+  "healthCheckPath": "/"
 }

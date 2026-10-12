@@ -3,12 +3,11 @@
   "schemaVersion": 1,
   "appName": "olefy",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xtphy5",
+  "stack": "mailcow-dockerized",
   "port": 4025,
-  "healthCheckPath": "/health",
-  "buildContext": "../../../data/Dockerfiles/olefy",
   "dockerfile": "Dockerfile",
   "dev": {
     "command": "python3 -u /app/olefy.py"
-  }
+  },
+  "healthCheckPath": "/"
 }

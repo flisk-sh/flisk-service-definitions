@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "mosquitto",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4066,
-  "healthCheckPath": "/health",
-  "dockerfile": "./Dockerfile"
+  "dockerfile": "./Dockerfile",
+  "healthCheckPath": "/"
 }

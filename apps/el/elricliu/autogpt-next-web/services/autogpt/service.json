@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "autogpt",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-diexnu",
+  "stack": "autogpt-next-web",
   "port": 4000,
-  "healthCheckPath": "/health",
   "image": "dogtititi/autogpt-next-web:latest",
   "dev": {
     "command": "next start"
-  }
+  },
+  "healthCheckPath": "/"
 }

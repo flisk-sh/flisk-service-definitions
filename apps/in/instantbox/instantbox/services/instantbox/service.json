@@ -1,14 +1,13 @@
 {
   "$schema": "https://tdk-landscape.github.io/schema.service.json",
   "schemaVersion": 1,
-  "appName": "tdk-crawl-45ivux",
+  "appName": "instantbox",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-45ivux",
+  "stack": "instantbox",
   "port": 4003,
-  "healthCheckPath": "/health",
-  "buildContext": "../../..",
   "dockerfile": "Dockerfile",
   "dev": {
     "command": "inspire.py"
-  }
+  },
+  "healthCheckPath": "/"
 }

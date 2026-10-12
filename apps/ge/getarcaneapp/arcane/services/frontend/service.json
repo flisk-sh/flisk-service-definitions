@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "frontend",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-rinypi",
+  "stack": "arcane",
   "port": 4010,
-  "healthCheckPath": "/health",
   "dockerfile": "./Dockerfile",
   "dev": {
     "command": "vp dev --port 3000 --host"
-  }
+  },
+  "healthCheckPath": "/"
 }

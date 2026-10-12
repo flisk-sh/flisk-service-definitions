@@ -3,12 +3,11 @@
   "schemaVersion": 1,
   "appName": "sogo",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xtphy5",
+  "stack": "mailcow-dockerized",
   "port": 4030,
-  "healthCheckPath": "/health",
-  "buildContext": "../../../data/Dockerfiles/sogo",
   "dockerfile": "Dockerfile",
   "dev": {
     "command": "/usr/bin/supervisord -c /etc/supervisor/supervisord.conf"
-  }
+  },
+  "healthCheckPath": "/"
 }

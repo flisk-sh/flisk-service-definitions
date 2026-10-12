@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "mailu-fetchmail",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4049,
-  "healthCheckPath": "/health",
-  "image": "mailu/fetchmail:${MAILU_VERSION}"
+  "image": "mailu/fetchmail:${MAILU_VERSION}",
+  "healthCheckPath": "/"
 }

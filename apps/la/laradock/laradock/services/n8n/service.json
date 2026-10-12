@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "n8n",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 5678,
-  "healthCheckPath": "/health",
-  "image": "n8nio/n8n:${N8N_VERSION}"
+  "image": "n8nio/n8n:${N8N_VERSION}",
+  "healthCheckPath": "/"
 }

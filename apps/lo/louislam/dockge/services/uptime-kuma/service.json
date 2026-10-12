@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "uptime-kuma",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-1bxof2",
+  "stack": "dockge",
   "port": 4004,
-  "healthCheckPath": "/health",
-  "image": "louislam/uptime-kuma:1"
+  "image": "louislam/uptime-kuma:1",
+  "healthCheckPath": "/"
 }

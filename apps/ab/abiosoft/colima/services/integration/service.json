@@ -3,9 +3,8 @@
   "schemaVersion": 1,
   "appName": "integration",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-nycypd",
+  "stack": "colima",
   "port": 4000,
-  "healthCheckPath": "/health",
-  "buildContext": "../../../integration",
-  "dockerfile": "Dockerfile"
+  "dockerfile": "Dockerfile",
+  "healthCheckPath": "/"
 }

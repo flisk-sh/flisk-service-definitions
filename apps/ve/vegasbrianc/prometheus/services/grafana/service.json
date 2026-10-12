@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "grafana",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-dh9agf",
+  "stack": "prometheus",
   "port": 4001,
-  "healthCheckPath": "/health",
   "image": "grafana/grafana",
   "dependsOn": [
     "prometheus"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

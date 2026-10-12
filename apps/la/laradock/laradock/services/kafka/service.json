@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "kafka",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4022,
-  "healthCheckPath": "/health",
-  "image": "wurstmeister/kafka"
+  "image": "wurstmeister/kafka",
+  "healthCheckPath": "/"
 }

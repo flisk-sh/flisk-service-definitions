@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "weaviate",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4116,
-  "healthCheckPath": "/health",
   "image": "cr.weaviate.io/semitechnologies/weaviate:${WEAVIATE_VERSION}",
   "dev": {
     "command": "--host 0.0.0.0 --port 8080 --scheme http"
-  }
+  },
+  "healthCheckPath": "/"
 }

@@ -3,12 +3,12 @@
   "schemaVersion": 1,
   "appName": "coolify",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-shmf9y",
+  "stack": "coolify",
   "port": 4006,
-  "healthCheckPath": "/health",
   "dockerfile": "./Dockerfile",
   "dependsOn": [
     "postgres",
     "redis"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

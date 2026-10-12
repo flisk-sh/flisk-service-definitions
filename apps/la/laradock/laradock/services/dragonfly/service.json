@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "dragonfly",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4019,
-  "healthCheckPath": "/health",
-  "image": "docker.dragonflydb.io/dragonflydb/dragonfly:${DRAGONFLY_VERSION}"
+  "image": "docker.dragonflydb.io/dragonflydb/dragonfly:${DRAGONFLY_VERSION}",
+  "healthCheckPath": "/"
 }

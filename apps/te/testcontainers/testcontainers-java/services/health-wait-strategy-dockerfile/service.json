@@ -3,12 +3,11 @@
   "schemaVersion": 1,
   "appName": "health-wait-strategy-dockerfile",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-w2iniy",
+  "stack": "testcontainers-java",
   "port": 4009,
-  "healthCheckPath": "/health",
-  "buildContext": "../../../core/src/test/resources/health-wait-strategy-dockerfile",
   "dockerfile": "Dockerfile",
   "dev": {
     "command": "/write_file_and_loop.sh"
-  }
+  },
+  "healthCheckPath": "/"
 }

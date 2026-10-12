@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "sogo-mailcow",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xtphy5",
+  "stack": "mailcow-dockerized",
   "port": 4015,
-  "healthCheckPath": "/health",
-  "image": "ghcr.io/mailcow/sogo:5.12.11-1"
+  "image": "ghcr.io/mailcow/sogo:5.12.11-1",
+  "healthCheckPath": "/"
 }

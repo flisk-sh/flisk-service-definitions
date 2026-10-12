@@ -3,9 +3,8 @@
   "schemaVersion": 1,
   "appName": "redis",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xym24y",
+  "stack": "devilbox",
   "port": 4006,
-  "healthCheckPath": "/health",
   "image": "redis:${REDIS_SERVER}",
   "dependsOn": [
     "bind",
@@ -14,5 +13,6 @@
   ],
   "dev": {
     "command": "redis-server ${REDIS_ARGS:- }"
-  }
+  },
+  "healthCheckPath": "/"
 }

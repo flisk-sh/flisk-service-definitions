@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "keycloak",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4033,
-  "healthCheckPath": "/health",
   "image": "bitnami/keycloak:${KEYCLOAK_VERSION}",
   "dependsOn": [
     "postgres"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

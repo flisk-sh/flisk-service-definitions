@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "mailu-webdav",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4053,
-  "healthCheckPath": "/health",
-  "image": "mailu/${MAILU_WEBDAV}:${MAILU_VERSION}"
+  "image": "mailu/${MAILU_WEBDAV}:${MAILU_VERSION}",
+  "healthCheckPath": "/"
 }

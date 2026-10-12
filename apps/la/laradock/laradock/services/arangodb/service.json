@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "arangodb",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4001,
-  "healthCheckPath": "/health",
-  "image": "arangodb:${ARANGODB_VERSION}"
+  "image": "arangodb:${ARANGODB_VERSION}",
+  "healthCheckPath": "/"
 }

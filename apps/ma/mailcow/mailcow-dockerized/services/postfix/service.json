@@ -3,12 +3,11 @@
   "schemaVersion": 1,
   "appName": "postfix",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xtphy5",
+  "stack": "mailcow-dockerized",
   "port": 4027,
-  "healthCheckPath": "/health",
-  "buildContext": "../../../data/Dockerfiles/postfix",
   "dockerfile": "Dockerfile",
   "dev": {
     "command": "/usr/bin/supervisord -c /etc/supervisor/supervisord.conf"
-  }
+  },
+  "healthCheckPath": "/"
 }

@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "onedev",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4073,
-  "healthCheckPath": "/health",
-  "image": "1dev/server"
+  "image": "1dev/server",
+  "healthCheckPath": "/"
 }

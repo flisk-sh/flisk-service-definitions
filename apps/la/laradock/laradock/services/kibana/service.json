@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "kibana",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4034,
-  "healthCheckPath": "/health",
   "dockerfile": "./Dockerfile",
   "dependsOn": [
     "elasticsearch"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

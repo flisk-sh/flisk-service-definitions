@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "cadvisor",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-dh9agf",
+  "stack": "prometheus",
   "port": 4000,
-  "healthCheckPath": "/health",
-  "image": "gcr.io/cadvisor/cadvisor"
+  "image": "gcr.io/cadvisor/cadvisor",
+  "healthCheckPath": "/"
 }

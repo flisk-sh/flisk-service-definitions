@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "elasticsearch",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-pddtpd",
+  "stack": "docker-elk",
   "port": 4001,
-  "healthCheckPath": "/health",
-  "dockerfile": "./Dockerfile"
+  "dockerfile": "./Dockerfile",
+  "healthCheckPath": "/"
 }

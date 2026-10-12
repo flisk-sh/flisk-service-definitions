@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "mailu-front",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4050,
-  "healthCheckPath": "/health",
-  "image": "mailu/nginx:${MAILU_VERSION}"
+  "image": "mailu/nginx:${MAILU_VERSION}",
+  "healthCheckPath": "/"
 }

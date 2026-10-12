@@ -3,12 +3,11 @@
   "schemaVersion": 1,
   "appName": "nginx",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xtphy5",
+  "stack": "mailcow-dockerized",
   "port": 4024,
-  "healthCheckPath": "/health",
-  "buildContext": "../../../data/Dockerfiles/nginx",
   "dockerfile": "Dockerfile",
   "dev": {
     "command": "nginx -g daemon off;"
-  }
+  },
+  "healthCheckPath": "/"
 }

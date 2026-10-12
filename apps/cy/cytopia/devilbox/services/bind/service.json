@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "bind",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xym24y",
+  "stack": "devilbox",
   "port": 4000,
-  "healthCheckPath": "/health",
-  "image": "cytopia/bind:alpine-0.35"
+  "image": "cytopia/bind:alpine-0.35",
+  "healthCheckPath": "/"
 }

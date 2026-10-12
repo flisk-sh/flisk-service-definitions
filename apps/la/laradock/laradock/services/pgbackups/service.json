@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "pgbackups",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4079,
-  "healthCheckPath": "/health",
-  "image": "prodrigestivill/postgres-backup-local"
+  "image": "prodrigestivill/postgres-backup-local",
+  "healthCheckPath": "/"
 }

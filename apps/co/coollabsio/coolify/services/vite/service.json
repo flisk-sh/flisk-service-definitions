@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "vite",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-shmf9y",
+  "stack": "coolify",
   "port": 4007,
-  "healthCheckPath": "/health",
   "image": "node:24-alpine",
   "dev": {
     "command": "sh -c \"npm install && npm run dev\""
-  }
+  },
+  "healthCheckPath": "/"
 }

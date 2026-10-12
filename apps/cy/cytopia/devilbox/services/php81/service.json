@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "php81",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xym24y",
+  "stack": "devilbox",
   "port": 4017,
-  "healthCheckPath": "/health",
   "image": "devilbox/php-fpm:8.1-prod-0.150",
   "dependsOn": [
     "bind"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

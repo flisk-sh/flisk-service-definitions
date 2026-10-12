@@ -3,12 +3,12 @@
   "schemaVersion": 1,
   "appName": "flask1",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xym24y",
+  "stack": "devilbox",
   "port": 4007,
-  "healthCheckPath": "/health",
   "image": "devilbox/python-flask:${PYTHON_VERSION:-3.8}-dev",
   "dependsOn": [
     "bind",
     "httpd"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

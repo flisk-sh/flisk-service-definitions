@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "metabase",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4059,
-  "healthCheckPath": "/health",
-  "image": "metabase/metabase:latest"
+  "image": "metabase/metabase:latest",
+  "healthCheckPath": "/"
 }

@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "coolify-testing-host",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-shmf9y",
+  "stack": "coolify",
   "port": 4000,
-  "healthCheckPath": "/health",
-  "image": "docker.io/coollabsio/coolify-testing-host:latest"
+  "image": "docker.io/coollabsio/coolify-testing-host:latest",
+  "healthCheckPath": "/"
 }

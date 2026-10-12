@@ -3,9 +3,8 @@
   "schemaVersion": 1,
   "appName": "service-first-dir",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-jvdbdd",
+  "stack": "uncloud",
   "port": 4002,
-  "healthCheckPath": "/health",
-  "buildContext": "../../../test/e2e/fixtures/compose-build-basic/service-first-dir",
-  "dockerfile": "Dockerfile"
+  "dockerfile": "Dockerfile",
+  "healthCheckPath": "/"
 }

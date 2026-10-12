@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "website",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-jvdbdd",
+  "stack": "uncloud",
   "port": 4006,
-  "healthCheckPath": "/health",
-  "dockerfile": "./Dockerfile"
+  "dockerfile": "./Dockerfile",
+  "healthCheckPath": "/"
 }

@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "email-templates",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-rinypi",
+  "stack": "arcane",
   "port": 4009,
-  "healthCheckPath": "/health",
   "dockerfile": "./Dockerfile",
   "dev": {
     "command": "email dev --port 3030"
-  }
+  },
+  "healthCheckPath": "/"
 }

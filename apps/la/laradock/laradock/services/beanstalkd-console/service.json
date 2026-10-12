@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "beanstalkd-console",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4009,
-  "healthCheckPath": "/health",
   "dockerfile": "./Dockerfile",
   "dependsOn": [
     "beanstalkd"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

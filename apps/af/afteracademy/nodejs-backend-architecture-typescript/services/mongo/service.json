@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "mongo",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-6ntowu",
+  "stack": "nodejs-backend-architecture-typescript",
   "port": 4001,
-  "healthCheckPath": "/health",
   "image": "mongo:8.3.2",
   "dev": {
     "command": "mongod --bind_ip_all"
-  }
+  },
+  "healthCheckPath": "/"
 }

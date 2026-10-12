@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "docker-socket-proxy",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-rinypi",
+  "stack": "arcane",
   "port": 4007,
-  "healthCheckPath": "/health",
-  "image": "tecnativa/docker-socket-proxy:latest"
+  "image": "tecnativa/docker-socket-proxy:latest",
+  "healthCheckPath": "/"
 }

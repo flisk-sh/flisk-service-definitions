@@ -3,9 +3,8 @@
   "schemaVersion": 1,
   "appName": "development",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-shmf9y",
+  "stack": "coolify",
   "port": 4009,
-  "healthCheckPath": "/health",
-  "buildContext": "../../../docker/development",
-  "dockerfile": "Dockerfile"
+  "dockerfile": "Dockerfile",
+  "healthCheckPath": "/"
 }

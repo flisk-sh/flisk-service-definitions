@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "nginx",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-rinypi",
+  "stack": "arcane",
   "port": 4011,
-  "healthCheckPath": "/health",
-  "image": "public.ecr.aws/nginx/nginx:stable-alpine"
+  "image": "public.ecr.aws/nginx/nginx:stable-alpine",
+  "healthCheckPath": "/"
 }

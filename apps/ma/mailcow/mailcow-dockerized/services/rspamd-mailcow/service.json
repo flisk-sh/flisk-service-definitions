@@ -3,12 +3,12 @@
   "schemaVersion": 1,
   "appName": "rspamd-mailcow",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xtphy5",
+  "stack": "mailcow-dockerized",
   "port": 4014,
-  "healthCheckPath": "/health",
   "image": "ghcr.io/mailcow/rspamd:4.2.1-1",
   "dependsOn": [
     "clamd-mailcow",
     "dovecot-mailcow"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

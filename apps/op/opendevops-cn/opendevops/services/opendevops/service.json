@@ -1,13 +1,13 @@
 {
   "$schema": "https://tdk-landscape.github.io/schema.service.json",
   "schemaVersion": 1,
-  "appName": "tdk-crawl-hg8kqw",
+  "appName": "opendevops",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-hg8kqw",
+  "stack": "opendevops",
   "port": 4000,
-  "healthCheckPath": "/health",
   "dockerfile": "./Dockerfile",
   "dev": {
     "command": "vuepress dev docs"
-  }
+  },
+  "healthCheckPath": "/"
 }

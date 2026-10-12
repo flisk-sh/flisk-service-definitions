@@ -3,9 +3,8 @@
   "schemaVersion": 1,
   "appName": "mailu",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4041,
-  "healthCheckPath": "/health",
   "image": "mailu/admin:${MAILU_VERSION}",
   "dependsOn": [
     "mailu-admin",
@@ -18,7 +17,6 @@
     "mailu-webdav",
     "mailu-webmail"
   ],
-  "dev": {
-    "command": "sh -c echo ${MAILU_INIT_ADMIN_USERNAME}@${MAILU_DOMAIN} ${MAILU_INIT_ADMIN_PASSWORD} ;python manage.py advertise ; python manage.py db upgrade ; python manage.py admin ${MAILU_INIT_ADMIN_USERNAME} ${MAILU_DOMAIN} ${MAILU_INIT_ADMIN_PASSWORD} || true;sed -i -- \"s/= Off/= On/g\" /webmail/_data_/_default_/configs/config.ini || true;if grep -Fq \"registration_link_url\" /webmail/_data_/_default_/configs/config.ini;then echo Already set!;else echo \"\" >> /webmail/_data_/_default_/configs/config.ini; echo \"[login]\" >> /webmail/_data_/_default_/configs/config.ini;echo \"registration_link_url = '${MAILU_WEBSITE}${MAILU_WEB_ADMIN}/ui/user/signup'\" >> /webmail/_data_/_default_/configs/config.ini;fi"
-  }
+  "dev": {},
+  "healthCheckPath": "/"
 }

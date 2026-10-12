@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "mailu-smtp",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4052,
-  "healthCheckPath": "/health",
   "image": "mailu/postfix:${MAILU_VERSION}",
   "dependsOn": [
     "mailu-front"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

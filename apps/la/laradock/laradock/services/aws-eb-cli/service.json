@@ -3,9 +3,8 @@
   "schemaVersion": 1,
   "appName": "aws-eb-cli",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4005,
-  "healthCheckPath": "/health",
-  "buildContext": "../../../aws-eb-cli",
-  "dockerfile": "Dockerfile"
+  "dockerfile": "Dockerfile",
+  "healthCheckPath": "/"
 }

@@ -3,9 +3,8 @@
   "schemaVersion": 1,
   "appName": "fleet",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-pddtpd",
+  "stack": "docker-elk",
   "port": 4003,
-  "healthCheckPath": "/health",
-  "buildContext": "../../../extensions/fleet",
-  "dockerfile": "Dockerfile"
+  "dockerfile": "Dockerfile",
+  "healthCheckPath": "/"
 }

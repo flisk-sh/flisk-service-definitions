@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "app-native-osx",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-zdsr4b",
+  "stack": "docker-sync",
   "port": 4004,
-  "healthCheckPath": "/health",
   "image": "alpine",
   "dev": {
     "command": "watch -n3 cat /var/www/index.html"
-  }
+  },
+  "healthCheckPath": "/"
 }

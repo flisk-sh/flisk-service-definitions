@@ -3,13 +3,13 @@
   "schemaVersion": 1,
   "appName": "mongo",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xym24y",
+  "stack": "devilbox",
   "port": 4003,
-  "healthCheckPath": "/health",
   "image": "mongo:${MONGO_SERVER}",
   "dependsOn": [
     "bind",
     "httpd",
     "php"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

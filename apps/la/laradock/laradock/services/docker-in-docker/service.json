@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "docker-in-docker",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4017,
-  "healthCheckPath": "/health",
-  "image": "docker:29-dind"
+  "image": "docker:29-dind",
+  "healthCheckPath": "/"
 }

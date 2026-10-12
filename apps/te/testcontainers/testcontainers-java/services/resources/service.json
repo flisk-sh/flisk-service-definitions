@@ -3,9 +3,8 @@
   "schemaVersion": 1,
   "appName": "resources",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-w2iniy",
+  "stack": "testcontainers-java",
   "port": 4001,
-  "healthCheckPath": "/health",
-  "buildContext": "../../../core/src/test/resources",
-  "dockerfile": "Dockerfile"
+  "dockerfile": "Dockerfile",
+  "healthCheckPath": "/"
 }

@@ -3,12 +3,11 @@
   "schemaVersion": 1,
   "appName": "speaches",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xim4ds",
+  "stack": "speaches",
   "port": 4003,
-  "healthCheckPath": "/health",
-  "buildContext": "../../..",
   "dockerfile": "Dockerfile",
   "dev": {
     "command": "uvicorn --factory speaches.main:create_app"
-  }
+  },
+  "healthCheckPath": "/"
 }

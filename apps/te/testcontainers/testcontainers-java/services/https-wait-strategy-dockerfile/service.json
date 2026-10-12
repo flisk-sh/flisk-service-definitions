@@ -3,9 +3,8 @@
   "schemaVersion": 1,
   "appName": "https-wait-strategy-dockerfile",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-w2iniy",
+  "stack": "testcontainers-java",
   "port": 4010,
-  "healthCheckPath": "/health",
-  "buildContext": "../../../core/src/test/resources/https-wait-strategy-dockerfile",
-  "dockerfile": "Dockerfile"
+  "dockerfile": "Dockerfile",
+  "healthCheckPath": "/"
 }

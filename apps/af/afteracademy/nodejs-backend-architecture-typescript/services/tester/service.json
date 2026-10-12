@@ -3,13 +3,12 @@
   "schemaVersion": 1,
   "appName": "tester",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-6ntowu",
+  "stack": "nodejs-backend-architecture-typescript",
   "port": 4003,
-  "healthCheckPath": "/health",
-  "buildContext": "../../..",
   "dockerfile": "Dockerfile.test",
   "dependsOn": [
     "mongo",
     "redis"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

@@ -3,9 +3,8 @@
   "schemaVersion": 1,
   "appName": "ofelia-mailcow",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xtphy5",
+  "stack": "mailcow-dockerized",
   "port": 4008,
-  "healthCheckPath": "/health",
   "image": "mcuadros/ofelia:latest",
   "dependsOn": [
     "dovecot-mailcow",
@@ -13,5 +12,6 @@
   ],
   "dev": {
     "command": "daemon --docker -f label=com.docker.compose.project=${COMPOSE_PROJECT_NAME}"
-  }
+  },
+  "healthCheckPath": "/"
 }

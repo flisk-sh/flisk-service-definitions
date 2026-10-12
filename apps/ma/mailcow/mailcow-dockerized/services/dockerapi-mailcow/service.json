@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "dockerapi-mailcow",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xtphy5",
+  "stack": "mailcow-dockerized",
   "port": 4002,
-  "healthCheckPath": "/health",
-  "image": "ghcr.io/mailcow/dockerapi:2.12"
+  "image": "ghcr.io/mailcow/dockerapi:2.12",
+  "healthCheckPath": "/"
 }

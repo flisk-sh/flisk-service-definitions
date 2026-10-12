@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "aria2-pro",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-fx4zmk",
+  "stack": "aria2-pro-docker",
   "port": 4000,
-  "healthCheckPath": "/health",
-  "image": "p3terx/aria2-pro"
+  "image": "p3terx/aria2-pro",
+  "healthCheckPath": "/"
 }

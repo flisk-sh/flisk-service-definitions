@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "netdata",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4070,
-  "healthCheckPath": "/health",
-  "image": "netdata/netdata:latest"
+  "image": "netdata/netdata:latest",
+  "healthCheckPath": "/"
 }

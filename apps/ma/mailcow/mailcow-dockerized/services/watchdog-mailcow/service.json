@@ -3,9 +3,8 @@
   "schemaVersion": 1,
   "appName": "watchdog-mailcow",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xtphy5",
+  "stack": "mailcow-dockerized",
   "port": 4017,
-  "healthCheckPath": "/health",
   "image": "ghcr.io/mailcow/watchdog:2.11",
   "dependsOn": [
     "acme-mailcow",
@@ -13,5 +12,6 @@
     "mysql-mailcow",
     "postfix-mailcow",
     "redis-mailcow"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "uncloud-website",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-jvdbdd",
+  "stack": "uncloud",
   "port": 4005,
-  "healthCheckPath": "/health",
-  "image": "uncloud-website"
+  "image": "uncloud-website",
+  "healthCheckPath": "/"
 }

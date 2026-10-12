@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "composerize-website",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-90opvs",
+  "stack": "composerize",
   "port": 4000,
-  "healthCheckPath": "/health",
   "dockerfile": "./Dockerfile",
   "dev": {
     "command": "make .env && react-scripts start"
-  }
+  },
+  "healthCheckPath": "/"
 }

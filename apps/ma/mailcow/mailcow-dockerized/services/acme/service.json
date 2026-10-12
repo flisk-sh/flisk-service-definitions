@@ -3,12 +3,11 @@
   "schemaVersion": 1,
   "appName": "acme",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xtphy5",
+  "stack": "mailcow-dockerized",
   "port": 4018,
-  "healthCheckPath": "/health",
-  "buildContext": "../../../data/Dockerfiles/acme",
   "dockerfile": "Dockerfile",
   "dev": {
     "command": "/sbin/tini -g -- /srv/acme.sh"
-  }
+  },
+  "healthCheckPath": "/"
 }

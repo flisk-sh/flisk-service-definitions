@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "grafana",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-eciwjh",
+  "stack": "cdn-up-and-running",
   "port": 4000,
-  "healthCheckPath": "/health",
-  "image": "grafana/grafana:latest"
+  "image": "grafana/grafana:latest",
+  "healthCheckPath": "/"
 }

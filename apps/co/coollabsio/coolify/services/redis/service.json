@@ -3,11 +3,9 @@
   "schemaVersion": 1,
   "appName": "redis",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-shmf9y",
+  "stack": "coolify",
   "port": 4012,
-  "healthCheckPath": "/health",
   "image": "redis:7-alpine",
-  "dev": {
-    "command": "redis-server --save 20 1 --loglevel warning --requirepass ${REDIS_PASSWORD}"
-  }
+  "dev": {},
+  "healthCheckPath": "/"
 }

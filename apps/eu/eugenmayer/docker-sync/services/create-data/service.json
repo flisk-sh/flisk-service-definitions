@@ -3,9 +3,8 @@
   "schemaVersion": 1,
   "appName": "create-data",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-zdsr4b",
+  "stack": "docker-sync",
   "port": 4003,
-  "healthCheckPath": "/health",
-  "buildContext": "../../../example/create-data",
-  "dockerfile": "Dockerfile"
+  "dockerfile": "Dockerfile",
+  "healthCheckPath": "/"
 }

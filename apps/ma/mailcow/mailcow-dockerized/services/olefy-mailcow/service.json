@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "olefy-mailcow",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xtphy5",
+  "stack": "mailcow-dockerized",
   "port": 4009,
-  "healthCheckPath": "/health",
-  "image": "ghcr.io/mailcow/olefy:1.15"
+  "image": "ghcr.io/mailcow/olefy:1.15",
+  "healthCheckPath": "/"
 }

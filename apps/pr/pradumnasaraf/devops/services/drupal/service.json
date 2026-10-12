@@ -3,9 +3,8 @@
   "schemaVersion": 1,
   "appName": "drupal",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-pbejxo",
+  "stack": "devops",
   "port": 4001,
-  "healthCheckPath": "/health",
-  "buildContext": "../../../docs/docker/docker-compose",
-  "dockerfile": "Dockerfile"
+  "dockerfile": "Dockerfile",
+  "healthCheckPath": "/"
 }

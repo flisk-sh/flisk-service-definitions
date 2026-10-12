@@ -3,9 +3,8 @@
   "schemaVersion": 1,
   "appName": "setup",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-pddtpd",
+  "stack": "docker-elk",
   "port": 4006,
-  "healthCheckPath": "/health",
-  "buildContext": "../../../setup",
-  "dockerfile": "Dockerfile"
+  "dockerfile": "Dockerfile",
+  "healthCheckPath": "/"
 }

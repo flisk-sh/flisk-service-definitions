@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "confluence",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4014,
-  "healthCheckPath": "/health",
   "image": "atlassian/confluence-server:${CONFLUENCE_VERSION}",
   "dependsOn": [
     "postgres"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "logstash",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-pddtpd",
+  "stack": "docker-elk",
   "port": 4007,
-  "healthCheckPath": "/health",
   "dockerfile": "./Dockerfile",
   "dependsOn": [
     "elasticsearch"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

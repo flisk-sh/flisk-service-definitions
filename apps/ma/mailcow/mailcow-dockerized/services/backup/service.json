@@ -3,9 +3,8 @@
   "schemaVersion": 1,
   "appName": "backup",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xtphy5",
+  "stack": "mailcow-dockerized",
   "port": 4019,
-  "healthCheckPath": "/health",
-  "buildContext": "../../../data/Dockerfiles/backup",
-  "dockerfile": "Dockerfile"
+  "dockerfile": "Dockerfile",
+  "healthCheckPath": "/"
 }

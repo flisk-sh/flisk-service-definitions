@@ -3,13 +3,13 @@
   "schemaVersion": 1,
   "appName": "pgsql",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xym24y",
-  "port": 5432,
-  "healthCheckPath": "/health",
+  "stack": "devilbox",
+  "port": 4050,
   "image": "postgres:${PGSQL_SERVER}",
   "dependsOn": [
     "bind",
     "httpd",
     "php"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

@@ -3,12 +3,11 @@
   "schemaVersion": 1,
   "appName": "curator",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-pddtpd",
+  "stack": "docker-elk",
   "port": 4000,
-  "healthCheckPath": "/health",
-  "buildContext": "../../../extensions/curator",
   "dockerfile": "Dockerfile",
   "dev": {
     "command": "-f -d8"
-  }
+  },
+  "healthCheckPath": "/"
 }

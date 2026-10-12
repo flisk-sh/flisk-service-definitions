@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "opensearch",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4075,
-  "healthCheckPath": "/health",
-  "image": "opensearchproject/opensearch:${OPENSEARCH_VERSION}"
+  "image": "opensearchproject/opensearch:${OPENSEARCH_VERSION}",
+  "healthCheckPath": "/"
 }

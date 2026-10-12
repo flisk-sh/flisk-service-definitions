@@ -3,12 +3,11 @@
   "schemaVersion": 1,
   "appName": "dockerapi",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xtphy5",
+  "stack": "mailcow-dockerized",
   "port": 4021,
-  "healthCheckPath": "/health",
-  "buildContext": "../../../data/Dockerfiles/dockerapi",
   "dockerfile": "Dockerfile",
   "dev": {
     "command": "python main.py"
-  }
+  },
+  "healthCheckPath": "/"
 }

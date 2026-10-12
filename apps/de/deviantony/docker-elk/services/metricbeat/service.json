@@ -3,9 +3,8 @@
   "schemaVersion": 1,
   "appName": "metricbeat",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-pddtpd",
+  "stack": "docker-elk",
   "port": 4005,
-  "healthCheckPath": "/health",
-  "buildContext": "../../../extensions/metricbeat",
-  "dockerfile": "Dockerfile"
+  "dockerfile": "Dockerfile",
+  "healthCheckPath": "/"
 }

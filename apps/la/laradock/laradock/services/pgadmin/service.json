@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "pgadmin",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4077,
-  "healthCheckPath": "/health",
   "image": "dpage/pgadmin4:latest",
   "dependsOn": [
     "postgres"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

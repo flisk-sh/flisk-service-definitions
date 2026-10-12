@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "memcached-mailcow",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xtphy5",
+  "stack": "mailcow-dockerized",
   "port": 4004,
-  "healthCheckPath": "/health",
-  "image": "memcached:alpine"
+  "image": "memcached:alpine",
+  "healthCheckPath": "/"
 }

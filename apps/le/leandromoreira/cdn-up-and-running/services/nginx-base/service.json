@@ -3,9 +3,8 @@
   "schemaVersion": 1,
   "appName": "nginx-base",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-eciwjh",
+  "stack": "cdn-up-and-running",
   "port": 4001,
-  "healthCheckPath": "/health",
-  "buildContext": "../../..",
-  "dockerfile": "Dockerfile"
+  "dockerfile": "Dockerfile",
+  "healthCheckPath": "/"
 }

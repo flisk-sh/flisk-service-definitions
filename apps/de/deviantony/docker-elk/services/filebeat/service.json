@@ -3,9 +3,8 @@
   "schemaVersion": 1,
   "appName": "filebeat",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-pddtpd",
+  "stack": "docker-elk",
   "port": 4002,
-  "healthCheckPath": "/health",
-  "buildContext": "../../../extensions/filebeat",
-  "dockerfile": "Dockerfile"
+  "dockerfile": "Dockerfile",
+  "healthCheckPath": "/"
 }

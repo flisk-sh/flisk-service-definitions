@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "laravel-reverb",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4039,
-  "healthCheckPath": "/health",
   "dockerfile": "./Dockerfile",
   "dependsOn": [
     "redis"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

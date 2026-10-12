@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "chroma",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4010,
-  "healthCheckPath": "/health",
-  "image": "chromadb/chroma:${CHROMA_VERSION}"
+  "image": "chromadb/chroma:${CHROMA_VERSION}",
+  "healthCheckPath": "/"
 }

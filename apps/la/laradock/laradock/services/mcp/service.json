@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "mcp",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4055,
-  "healthCheckPath": "/health",
   "image": "bytebase/dbhub:${MCP_VERSION}",
   "dev": {
     "command": "--config=/app/dbhub.toml --transport=http --port=8080"
-  }
+  },
+  "healthCheckPath": "/"
 }

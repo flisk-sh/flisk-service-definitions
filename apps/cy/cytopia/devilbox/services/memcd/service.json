@@ -3,13 +3,13 @@
   "schemaVersion": 1,
   "appName": "memcd",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xym24y",
+  "stack": "devilbox",
   "port": 4002,
-  "healthCheckPath": "/health",
   "image": "memcached:${MEMCD_SERVER}",
   "dependsOn": [
     "bind",
     "httpd",
     "php"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

@@ -3,13 +3,13 @@
   "schemaVersion": 1,
   "appName": "postfix-mailcow",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xtphy5",
+  "stack": "mailcow-dockerized",
   "port": 4011,
-  "healthCheckPath": "/health",
   "image": "ghcr.io/mailcow/postfix:3.10.12-1",
   "dependsOn": [
     "mysql-mailcow",
     "postfix-tlspol-mailcow",
     "unbound-mailcow"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

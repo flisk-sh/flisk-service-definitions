@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "redis",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-w2iniy",
+  "stack": "testcontainers-java",
   "port": 4006,
-  "healthCheckPath": "/health",
-  "image": "redis:6-alpine"
+  "image": "redis:6-alpine",
+  "healthCheckPath": "/"
 }

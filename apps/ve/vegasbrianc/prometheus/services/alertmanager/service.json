@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "alertmanager",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-dh9agf",
+  "stack": "prometheus",
   "port": 4005,
-  "healthCheckPath": "/health",
   "image": "prom/alertmanager",
   "dev": {
     "command": "--config.file=/etc/alertmanager/config.yml --storage.path=/alertmanager"
-  }
+  },
+  "healthCheckPath": "/"
 }

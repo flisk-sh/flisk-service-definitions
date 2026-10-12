@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "prometheus",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4088,
-  "healthCheckPath": "/health",
-  "image": "prom/prometheus:${PROMETHEUS_VERSION}"
+  "image": "prom/prometheus:${PROMETHEUS_VERSION}",
+  "healthCheckPath": "/"
 }

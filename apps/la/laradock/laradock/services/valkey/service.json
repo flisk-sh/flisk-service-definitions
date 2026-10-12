@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "valkey",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4111,
-  "healthCheckPath": "/health",
-  "image": "valkey/valkey:${VALKEY_VERSION}"
+  "image": "valkey/valkey:${VALKEY_VERSION}",
+  "healthCheckPath": "/"
 }

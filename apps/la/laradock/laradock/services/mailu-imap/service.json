@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "mailu-imap",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4051,
-  "healthCheckPath": "/health",
   "image": "mailu/dovecot:${MAILU_VERSION}",
   "dependsOn": [
     "mailu-front"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

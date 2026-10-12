@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "unisononsidedapp",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-zdsr4b",
+  "stack": "docker-sync",
   "port": 4002,
-  "healthCheckPath": "/health",
   "image": "alpine",
   "dev": {
     "command": "watch -n1 cat /app/code/somefile.txt"
-  }
+  },
+  "healthCheckPath": "/"
 }

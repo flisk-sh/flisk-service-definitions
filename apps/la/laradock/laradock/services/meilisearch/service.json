@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "meilisearch",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4058,
-  "healthCheckPath": "/health",
-  "image": "getmeili/meilisearch:latest"
+  "image": "getmeili/meilisearch:latest",
+  "healthCheckPath": "/"
 }

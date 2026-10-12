@@ -3,13 +3,13 @@
   "schemaVersion": 1,
   "appName": "mysql",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xym24y",
+  "stack": "devilbox",
   "port": 4004,
-  "healthCheckPath": "/health",
   "image": "devilbox/mysql:${MYSQL_SERVER}-0.21",
   "dependsOn": [
     "bind",
     "httpd",
     "php"
-  ]
+  ],
+  "healthCheckPath": "/"
 }

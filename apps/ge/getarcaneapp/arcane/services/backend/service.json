@@ -3,9 +3,8 @@
   "schemaVersion": 1,
   "appName": "backend",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-rinypi",
+  "stack": "arcane",
   "port": 4001,
-  "healthCheckPath": "/health",
-  "buildContext": "../../..",
-  "dockerfile": "docker/Dockerfile.dev"
+  "dockerfile": "docker/Dockerfile.dev",
+  "healthCheckPath": "/"
 }

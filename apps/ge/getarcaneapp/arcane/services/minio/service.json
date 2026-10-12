@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "minio",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-rinypi",
+  "stack": "arcane",
   "port": 4002,
-  "healthCheckPath": "/health",
-  "image": "cgr.dev/chainguard/minio:latest-dev@sha256:d7c906993247627c19f37fc1fa302c34cf2d209ae0e7dc7d52fb0be6ac2849ba"
+  "image": "cgr.dev/chainguard/minio:latest-dev@sha256:d7c906993247627c19f37fc1fa302c34cf2d209ae0e7dc7d52fb0be6ac2849ba",
+  "healthCheckPath": "/"
 }

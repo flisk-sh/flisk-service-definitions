@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "prometheus",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-xim4ds",
+  "stack": "speaches",
   "port": 4002,
-  "healthCheckPath": "/health",
   "image": "prom/prometheus:v2.55.1",
   "dev": {
     "command": "--config.file=/etc/prometheus.yaml"
-  }
+  },
+  "healthCheckPath": "/"
 }

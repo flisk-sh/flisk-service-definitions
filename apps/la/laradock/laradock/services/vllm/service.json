@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "appName": "vllm",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4115,
-  "healthCheckPath": "/health",
   "image": "vllm/vllm-openai:${VLLM_VERSION}",
   "dev": {
     "command": "--model ${VLLM_MODEL}"
-  }
+  },
+  "healthCheckPath": "/"
 }

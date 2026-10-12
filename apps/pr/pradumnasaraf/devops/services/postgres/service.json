@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "postgres",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-pbejxo",
+  "stack": "devops",
   "port": 4002,
-  "healthCheckPath": "/health",
-  "image": "postgres:14.3"
+  "image": "postgres:14.3",
+  "healthCheckPath": "/"
 }

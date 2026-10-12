@@ -3,12 +3,11 @@
   "schemaVersion": 1,
   "appName": "varnish",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4112,
-  "healthCheckPath": "/health",
-  "buildContext": "../../../varnish",
   "dockerfile": "Dockerfile",
   "dev": {
     "command": "/etc/varnish/start.sh"
-  }
+  },
+  "healthCheckPath": "/"
 }

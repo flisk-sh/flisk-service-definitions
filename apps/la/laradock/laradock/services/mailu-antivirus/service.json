@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "mailu-antivirus",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
+  "stack": "laradock",
   "port": 4048,
-  "healthCheckPath": "/health",
-  "image": "mailu/clamav:${MAILU_VERSION}"
+  "image": "mailu/clamav:${MAILU_VERSION}",
+  "healthCheckPath": "/"
 }

@@ -3,12 +3,11 @@
   "schemaVersion": 1,
   "appName": "coolify-helper",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-shmf9y",
+  "stack": "coolify",
   "port": 4008,
-  "healthCheckPath": "/health",
-  "buildContext": "../../../docker/coolify-helper",
   "dockerfile": "Dockerfile",
   "dev": {
     "command": "tail -f /dev/null"
-  }
+  },
+  "healthCheckPath": "/"
 }

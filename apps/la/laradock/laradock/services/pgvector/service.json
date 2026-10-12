@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "pgvector",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-z7bbuo",
-  "port": 5432,
-  "healthCheckPath": "/health",
-  "image": "pgvector/pgvector:${PGVECTOR_VERSION}"
+  "stack": "laradock",
+  "port": 4117,
+  "image": "pgvector/pgvector:${PGVECTOR_VERSION}",
+  "healthCheckPath": "/"
 }

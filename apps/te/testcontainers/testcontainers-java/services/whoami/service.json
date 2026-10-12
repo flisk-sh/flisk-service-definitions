@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "appName": "whoami",
   "appType": "bring-your-own",
-  "stack": "tdk-crawl-w2iniy",
+  "stack": "testcontainers-java",
   "port": 4013,
-  "healthCheckPath": "/health",
-  "image": "emilevauge/whoami"
+  "image": "emilevauge/whoami",
+  "healthCheckPath": "/"
 }
