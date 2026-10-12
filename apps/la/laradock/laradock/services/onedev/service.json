@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "laradock",
   "port": 4073,
-  "image": "1dev/server",
-  "healthCheckPath": "/"
+  "image": "1dev/server"
 }

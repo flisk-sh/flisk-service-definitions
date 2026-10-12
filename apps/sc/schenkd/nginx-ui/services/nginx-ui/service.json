@@ -8,6 +8,5 @@
   "image": "nginx-ui:latest",
   "dev": {
     "command": "--http 0.0.0.0:8080 --wsgi-file wsgi.py --callable app --processes 1 --threads 8"
-  },
-  "healthCheckPath": "/"
+  }
 }

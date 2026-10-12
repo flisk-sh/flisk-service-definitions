@@ -8,6 +8,5 @@
   "image": "mailu/rspamd:${MAILU_VERSION}",
   "dependsOn": [
     "mailu-front"
-  ],
-  "healthCheckPath": "/"
+  ]
 }

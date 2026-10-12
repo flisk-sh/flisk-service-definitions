@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "coolify",
   "port": 4000,
-  "image": "docker.io/coollabsio/coolify-testing-host:latest",
-  "healthCheckPath": "/"
+  "image": "docker.io/coollabsio/coolify-testing-host:latest"
 }

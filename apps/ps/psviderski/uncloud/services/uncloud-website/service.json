@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "uncloud",
   "port": 4005,
-  "image": "uncloud-website",
-  "healthCheckPath": "/"
+  "image": "uncloud-website"
 }

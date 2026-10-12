@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "laradock",
   "port": 4032,
-  "image": "sheepkiller/kafka-manager",
-  "healthCheckPath": "/"
+  "image": "sheepkiller/kafka-manager"
 }

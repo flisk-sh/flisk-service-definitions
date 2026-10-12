@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "laradock",
   "port": 4062,
-  "image": "neo4j:latest",
-  "healthCheckPath": "/"
+  "image": "neo4j:latest"
 }

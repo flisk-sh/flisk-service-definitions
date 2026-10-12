@@ -8,6 +8,5 @@
   "image": "otel/opentelemetry-collector-contrib:0.136.0",
   "dev": {
     "command": "--config=/etc/opentelemetry-collector.yaml"
-  },
-  "healthCheckPath": "/"
+  }
 }

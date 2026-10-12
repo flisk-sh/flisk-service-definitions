@@ -9,6 +9,5 @@
   "dependsOn": [
     "nginx-mailcow",
     "unbound-mailcow"
-  ],
-  "healthCheckPath": "/"
+  ]
 }

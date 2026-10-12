@@ -1,0 +1,9 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.app.json",
+  "name": "@pradumnasaraf/devops",
+  "schemaVersion": 1,
+  "description": "I created this repository to keep my learning, notes, and code in one place for various tools in DevOps. Now, it's helping thousands of learners, practitioners, and professionals every day in their DevOps journey.",
+  "repository": "https://github.com/Pradumnasaraf/DevOps",
+  "license": "GPL-3.0",
+  "sourceCommit": "27e3f647bcbf1886bcc26887db4476aa2b0e582e"
+}

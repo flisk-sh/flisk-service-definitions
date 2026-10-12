@@ -8,6 +8,5 @@
   "dockerfile": "./services/tdk-crawl-2efo4j/tdk-crawl-2efo4j/Dockerfile",
   "dev": {
     "command": "bun scripts/dev-server.ts"
-  },
-  "healthCheckPath": "/"
+  }
 }

@@ -6,6 +6,5 @@
   "stack": "nodejs-backend-architecture-typescript",
   "port": 4002,
   "image": "redis:8.8.0",
-  "dev": {},
-  "healthCheckPath": "/"
+  "dev": {}
 }

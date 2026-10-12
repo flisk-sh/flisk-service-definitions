@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "mailcow-dockerized",
   "port": 4002,
-  "image": "ghcr.io/mailcow/dockerapi:2.12",
-  "healthCheckPath": "/"
+  "image": "ghcr.io/mailcow/dockerapi:2.12"
 }

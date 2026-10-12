@@ -1,0 +1,9 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.app.json",
+  "name": "@eugenmayer/docker-sync",
+  "schemaVersion": 1,
+  "description": "Run your application at full speed while syncing your code for development, finally empowering you to utilize docker for development under OSX/Windows/*Linux",
+  "repository": "https://github.com/EugenMayer/docker-sync",
+  "license": "GPL-3.0",
+  "sourceCommit": "4eab6de164d44c724c739c17bd574efa9008aae1"
+}

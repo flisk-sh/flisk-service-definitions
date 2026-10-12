@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "laradock",
   "port": 4017,
-  "image": "docker:29-dind",
-  "healthCheckPath": "/"
+  "image": "docker:29-dind"
 }

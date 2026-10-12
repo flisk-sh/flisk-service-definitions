@@ -8,6 +8,5 @@
   "dockerfile": "Dockerfile",
   "dev": {
     "command": "/write_file_and_loop.sh"
-  },
-  "healthCheckPath": "/"
+  }
 }

@@ -8,6 +8,5 @@
   "image": "grafana/grafana",
   "dependsOn": [
     "prometheus"
-  ],
-  "healthCheckPath": "/"
+  ]
 }

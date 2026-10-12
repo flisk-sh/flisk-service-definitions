@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "laradock",
   "port": 4071,
-  "image": "ollama/ollama:${OLLAMA_VERSION}",
-  "healthCheckPath": "/"
+  "image": "ollama/ollama:${OLLAMA_VERSION}"
 }

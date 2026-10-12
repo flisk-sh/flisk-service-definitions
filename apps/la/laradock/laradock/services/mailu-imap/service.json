@@ -8,6 +8,5 @@
   "image": "mailu/dovecot:${MAILU_VERSION}",
   "dependsOn": [
     "mailu-front"
-  ],
-  "healthCheckPath": "/"
+  ]
 }

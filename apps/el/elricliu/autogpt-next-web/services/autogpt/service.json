@@ -8,6 +8,5 @@
   "image": "dogtititi/autogpt-next-web:latest",
   "dev": {
     "command": "next start"
-  },
-  "healthCheckPath": "/"
+  }
 }

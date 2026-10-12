@@ -89,8 +89,7 @@
           }
         },
         "required": [
-          "port",
-          "healthCheckPath"
+          "port"
         ]
       }
     }
@@ -277,7 +276,7 @@
     },
     "healthCheckPath": {
       "default": "/health",
-      "description": "HTTP endpoint for health checks. Must return 200 OK.",
+      "description": "HTTP endpoint for health checks. Must return 200 OK. Optional for bring-your-own: omit it for a service that does not speak HTTP (Postgres, Redis, SMTP, ...), and TDK then skips the HTTP health probes for it.",
       "pattern": "^/[a-z0-9/-]*$",
       "type": "string"
     },

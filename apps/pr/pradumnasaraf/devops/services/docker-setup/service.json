@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "devops",
   "port": 4003,
-  "dockerfile": "Dockerfile",
-  "healthCheckPath": "/"
+  "dockerfile": "Dockerfile"
 }

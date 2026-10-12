@@ -11,6 +11,5 @@
     "redis-mailcow",
     "rspamd-mailcow",
     "sogo-mailcow"
-  ],
-  "healthCheckPath": "/"
+  ]
 }

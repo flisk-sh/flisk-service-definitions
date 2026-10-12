@@ -8,6 +8,5 @@
   "image": "grafana/tempo:2.8.2",
   "dev": {
     "command": "-config.file=/etc/tempo.yaml"
-  },
-  "healthCheckPath": "/"
+  }
 }

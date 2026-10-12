@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "laradock",
   "port": 4074,
-  "image": "ghcr.io/open-webui/open-webui:${OPEN_WEBUI_VERSION}",
-  "healthCheckPath": "/"
+  "image": "ghcr.io/open-webui/open-webui:${OPEN_WEBUI_VERSION}"
 }

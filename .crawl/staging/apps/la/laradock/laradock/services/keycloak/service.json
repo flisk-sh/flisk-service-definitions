@@ -1,0 +1,13 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "keycloak",
+  "appType": "bring-your-own",
+  "stack": "tdk-crawl-z7bbuo",
+  "port": 4033,
+  "healthCheckPath": "/health",
+  "image": "bitnami/keycloak:${KEYCLOAK_VERSION}",
+  "dependsOn": [
+    "postgres"
+  ]
+}

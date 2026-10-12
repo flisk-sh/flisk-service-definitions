@@ -8,6 +8,5 @@
   "dockerfile": "./Dockerfile",
   "dev": {
     "command": "vp dev --port 3000 --host"
-  },
-  "healthCheckPath": "/"
+  }
 }

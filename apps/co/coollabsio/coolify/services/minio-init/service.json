@@ -8,6 +8,5 @@
   "image": "ghcr.io/coollabsio/mx:0.1.0",
   "dependsOn": [
     "minio"
-  ],
-  "healthCheckPath": "/"
+  ]
 }

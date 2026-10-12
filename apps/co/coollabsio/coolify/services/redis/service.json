@@ -6,6 +6,5 @@
   "stack": "coolify",
   "port": 4012,
   "image": "redis:7-alpine",
-  "dev": {},
-  "healthCheckPath": "/"
+  "dev": {}
 }

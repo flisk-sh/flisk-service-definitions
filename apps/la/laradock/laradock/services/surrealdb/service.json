@@ -6,6 +6,5 @@
   "stack": "laradock",
   "port": 4097,
   "image": "surrealdb/surrealdb:${SURREALDB_VERSION}",
-  "dev": {},
-  "healthCheckPath": "/"
+  "dev": {}
 }

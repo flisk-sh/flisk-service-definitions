@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "laradock",
   "port": 4059,
-  "image": "metabase/metabase:latest",
-  "healthCheckPath": "/"
+  "image": "metabase/metabase:latest"
 }

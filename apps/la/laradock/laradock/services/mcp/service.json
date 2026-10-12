@@ -8,6 +8,5 @@
   "image": "bytebase/dbhub:${MCP_VERSION}",
   "dev": {
     "command": "--config=/app/dbhub.toml --transport=http --port=8080"
-  },
-  "healthCheckPath": "/"
+  }
 }

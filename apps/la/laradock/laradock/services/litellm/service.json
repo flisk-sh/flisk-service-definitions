@@ -8,6 +8,5 @@
   "image": "ghcr.io/berriai/litellm:${LITELLM_VERSION}",
   "dev": {
     "command": "--config /app/config.yaml --port 4000"
-  },
-  "healthCheckPath": "/"
+  }
 }

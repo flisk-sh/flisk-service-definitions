@@ -1,0 +1,13 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "autogpt",
+  "appType": "bring-your-own",
+  "stack": "tdk-crawl-diexnu",
+  "port": 4000,
+  "healthCheckPath": "/health",
+  "image": "dogtititi/autogpt-next-web:latest",
+  "dev": {
+    "command": "next start"
+  }
+}

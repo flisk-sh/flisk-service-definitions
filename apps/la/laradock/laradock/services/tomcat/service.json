@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "laradock",
   "port": 4103,
-  "image": "tomcat:${TOMCAT_VERSION}",
-  "healthCheckPath": "/"
+  "image": "tomcat:${TOMCAT_VERSION}"
 }

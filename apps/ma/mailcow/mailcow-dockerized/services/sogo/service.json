@@ -8,6 +8,5 @@
   "dockerfile": "Dockerfile",
   "dev": {
     "command": "/usr/bin/supervisord -c /etc/supervisor/supervisord.conf"
-  },
-  "healthCheckPath": "/"
+  }
 }

@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "coolify",
   "port": 4009,
-  "dockerfile": "Dockerfile",
-  "healthCheckPath": "/"
+  "dockerfile": "Dockerfile"
 }

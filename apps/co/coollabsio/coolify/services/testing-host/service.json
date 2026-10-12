@@ -8,6 +8,5 @@
   "dockerfile": "Dockerfile",
   "dev": {
     "command": "/usr/sbin/sshd -D -o ListenAddress=0.0.0.0 -o Port=22"
-  },
-  "healthCheckPath": "/"
+  }
 }

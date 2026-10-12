@@ -8,6 +8,5 @@
   "dockerfile": "./Dockerfile",
   "dev": {
     "command": "email dev --port 3030"
-  },
-  "healthCheckPath": "/"
+  }
 }

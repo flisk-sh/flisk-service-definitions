@@ -1,0 +1,13 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "mongo-webui",
+  "appType": "bring-your-own",
+  "stack": "tdk-crawl-z7bbuo",
+  "port": 4065,
+  "healthCheckPath": "/health",
+  "dockerfile": "./Dockerfile",
+  "dependsOn": [
+    "mongo"
+  ]
+}

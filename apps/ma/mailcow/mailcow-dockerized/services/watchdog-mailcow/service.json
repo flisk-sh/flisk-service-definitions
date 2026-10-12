@@ -12,6 +12,5 @@
     "mysql-mailcow",
     "postfix-mailcow",
     "redis-mailcow"
-  ],
-  "healthCheckPath": "/"
+  ]
 }

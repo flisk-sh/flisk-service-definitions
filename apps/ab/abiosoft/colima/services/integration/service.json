@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "colima",
   "port": 4000,
-  "dockerfile": "Dockerfile",
-  "healthCheckPath": "/"
+  "dockerfile": "Dockerfile"
 }

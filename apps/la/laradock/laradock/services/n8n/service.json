@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "laradock",
   "port": 5678,
-  "image": "n8nio/n8n:${N8N_VERSION}",
-  "healthCheckPath": "/"
+  "image": "n8nio/n8n:${N8N_VERSION}"
 }

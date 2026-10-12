@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "laradock",
   "port": 4001,
-  "image": "arangodb:${ARANGODB_VERSION}",
-  "healthCheckPath": "/"
+  "image": "arangodb:${ARANGODB_VERSION}"
 }

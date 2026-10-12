@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "aria2-pro-docker",
   "port": 4000,
-  "image": "p3terx/aria2-pro",
-  "healthCheckPath": "/"
+  "image": "p3terx/aria2-pro"
 }

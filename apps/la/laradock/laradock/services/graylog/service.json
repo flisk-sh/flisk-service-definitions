@@ -9,6 +9,5 @@
   "dependsOn": [
     "elasticsearch",
     "mongo"
-  ],
-  "healthCheckPath": "/"
+  ]
 }

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "rspamd",
+  "appType": "bring-your-own",
+  "stack": "tdk-crawl-xtphy5",
+  "port": 4029,
+  "healthCheckPath": "/health",
+  "buildContext": "../../../data/Dockerfiles/rspamd",
+  "dockerfile": "Dockerfile",
+  "dev": {
+    "command": "/usr/bin/rspamd -f -u _rspamd -g _rspamd"
+  }
+}

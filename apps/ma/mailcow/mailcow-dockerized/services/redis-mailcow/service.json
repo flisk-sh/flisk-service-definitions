@@ -8,6 +8,5 @@
   "image": "redis:7.4.11-alpine",
   "dependsOn": [
     "netfilter-mailcow"
-  ],
-  "healthCheckPath": "/"
+  ]
 }

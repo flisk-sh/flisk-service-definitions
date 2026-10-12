@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "devops",
   "port": 4002,
-  "image": "postgres:14.3",
-  "healthCheckPath": "/"
+  "image": "postgres:14.3"
 }

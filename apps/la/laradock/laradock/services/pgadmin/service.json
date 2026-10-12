@@ -8,6 +8,5 @@
   "image": "dpage/pgadmin4:latest",
   "dependsOn": [
     "postgres"
-  ],
-  "healthCheckPath": "/"
+  ]
 }

@@ -8,6 +8,5 @@
   "image": "atlassian/confluence-server:${CONFLUENCE_VERSION}",
   "dependsOn": [
     "postgres"
-  ],
-  "healthCheckPath": "/"
+  ]
 }

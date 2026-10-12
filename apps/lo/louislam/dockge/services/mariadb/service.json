@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "dockge",
   "port": 4002,
-  "image": "mariadb:latest",
-  "healthCheckPath": "/"
+  "image": "mariadb:latest"
 }

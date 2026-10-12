@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "arcane",
   "port": 4001,
-  "dockerfile": "docker/Dockerfile.dev",
-  "healthCheckPath": "/"
+  "dockerfile": "docker/Dockerfile.dev"
 }

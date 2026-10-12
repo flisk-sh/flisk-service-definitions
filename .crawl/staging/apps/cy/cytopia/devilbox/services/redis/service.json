@@ -1,0 +1,18 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "redis",
+  "appType": "bring-your-own",
+  "stack": "tdk-crawl-xym24y",
+  "port": 4006,
+  "healthCheckPath": "/health",
+  "image": "redis:${REDIS_SERVER}",
+  "dependsOn": [
+    "bind",
+    "httpd",
+    "php"
+  ],
+  "dev": {
+    "command": "redis-server ${REDIS_ARGS:- }"
+  }
+}

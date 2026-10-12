@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "mailcow-dockerized",
   "port": 4004,
-  "image": "memcached:alpine",
-  "healthCheckPath": "/"
+  "image": "memcached:alpine"
 }

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "surrealdb",
+  "appType": "bring-your-own",
+  "stack": "tdk-crawl-z7bbuo",
+  "port": 4097,
+  "healthCheckPath": "/health",
+  "image": "surrealdb/surrealdb:${SURREALDB_VERSION}",
+  "dev": {
+    "command": "start --user ${SURREALDB_USER} --pass ${SURREALDB_PASSWORD} --bind 0.0.0.0:8000 rocksdb:/data/database.db"
+  }
+}

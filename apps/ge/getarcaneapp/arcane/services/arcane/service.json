@@ -9,6 +9,5 @@
   "dependsOn": [
     "docker-socket-proxy",
     "otel-collector"
-  ],
-  "healthCheckPath": "/"
+  ]
 }

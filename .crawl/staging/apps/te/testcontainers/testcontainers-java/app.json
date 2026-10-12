@@ -1,0 +1,9 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.app.json",
+  "name": "@testcontainers/testcontainers-java",
+  "schemaVersion": 1,
+  "description": "Testcontainers is a Java library that supports JUnit tests, providing lightweight, throwaway instances of common databases, Selenium web browsers, or anything else that can run in a Docker container.",
+  "repository": "https://github.com/testcontainers/testcontainers-java",
+  "license": "MIT",
+  "sourceCommit": "9bb3c2dc175672ad33a2eafd7133212c7173ac43"
+}

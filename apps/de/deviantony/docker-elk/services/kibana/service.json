@@ -8,6 +8,5 @@
   "dockerfile": "./Dockerfile",
   "dependsOn": [
     "elasticsearch"
-  ],
-  "healthCheckPath": "/"
+  ]
 }

@@ -8,6 +8,5 @@
   "image": "vllm/vllm-openai:${VLLM_VERSION}",
   "dev": {
     "command": "--model ${VLLM_MODEL}"
-  },
-  "healthCheckPath": "/"
+  }
 }

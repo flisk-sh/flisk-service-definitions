@@ -1,0 +1,9 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.app.json",
+  "name": "@vegasbrianc/prometheus",
+  "schemaVersion": 1,
+  "description": "A docker-compose stack for Prometheus monitoring",
+  "repository": "https://github.com/vegasbrianc/prometheus",
+  "license": "MIT",
+  "sourceCommit": "9f727093e9d96fbd73e97e844c3511659e82d332"
+}

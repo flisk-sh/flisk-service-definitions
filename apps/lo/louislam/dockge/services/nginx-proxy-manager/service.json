@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "dockge",
   "port": 4003,
-  "image": "jc21/nginx-proxy-manager:latest",
-  "healthCheckPath": "/"
+  "image": "jc21/nginx-proxy-manager:latest"
 }

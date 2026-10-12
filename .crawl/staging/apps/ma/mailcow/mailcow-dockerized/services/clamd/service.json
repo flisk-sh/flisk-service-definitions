@@ -1,0 +1,14 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "clamd",
+  "appType": "bring-your-own",
+  "stack": "tdk-crawl-xtphy5",
+  "port": 4020,
+  "healthCheckPath": "/health",
+  "buildContext": "../../../data/Dockerfiles/clamd",
+  "dockerfile": "Dockerfile",
+  "dev": {
+    "command": "/sbin/tini -g -- /clamd.sh"
+  }
+}

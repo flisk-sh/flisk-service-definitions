@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "laradock",
   "port": 4111,
-  "image": "valkey/valkey:${VALKEY_VERSION}",
-  "healthCheckPath": "/"
+  "image": "valkey/valkey:${VALKEY_VERSION}"
 }

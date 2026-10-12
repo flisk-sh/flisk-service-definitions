@@ -1,0 +1,14 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "compose-dockerfile",
+  "appType": "bring-your-own",
+  "stack": "tdk-crawl-w2iniy",
+  "port": 4004,
+  "healthCheckPath": "/health",
+  "buildContext": "../../../core/src/test/resources/compose-dockerfile",
+  "dockerfile": "Dockerfile",
+  "dev": {
+    "command": "/passthrough.sh"
+  }
+}

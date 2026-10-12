@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "speaches",
   "port": 4000,
-  "image": "grafana/grafana:12.2.0",
-  "healthCheckPath": "/"
+  "image": "grafana/grafana:12.2.0"
 }

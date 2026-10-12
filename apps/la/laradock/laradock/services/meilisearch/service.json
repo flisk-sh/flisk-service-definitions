@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "laradock",
   "port": 4058,
-  "image": "getmeili/meilisearch:latest",
-  "healthCheckPath": "/"
+  "image": "getmeili/meilisearch:latest"
 }

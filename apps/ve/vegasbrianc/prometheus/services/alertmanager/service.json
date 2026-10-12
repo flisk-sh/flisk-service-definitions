@@ -8,6 +8,5 @@
   "image": "prom/alertmanager",
   "dev": {
     "command": "--config.file=/etc/alertmanager/config.yml --storage.path=/alertmanager"
-  },
-  "healthCheckPath": "/"
+  }
 }

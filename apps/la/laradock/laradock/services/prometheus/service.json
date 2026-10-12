@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "laradock",
   "port": 4088,
-  "image": "prom/prometheus:${PROMETHEUS_VERSION}",
-  "healthCheckPath": "/"
+  "image": "prom/prometheus:${PROMETHEUS_VERSION}"
 }

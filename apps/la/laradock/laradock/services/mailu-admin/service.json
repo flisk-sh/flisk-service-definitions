@@ -8,6 +8,5 @@
   "image": "mailu/admin:${MAILU_VERSION}",
   "dependsOn": [
     "redis"
-  ],
-  "healthCheckPath": "/"
+  ]
 }

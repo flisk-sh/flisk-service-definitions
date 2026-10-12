@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "instantbox",
   "port": 4000,
-  "image": "instantbox/cron:latest",
-  "healthCheckPath": "/"
+  "image": "instantbox/cron:latest"
 }

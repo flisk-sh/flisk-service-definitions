@@ -8,6 +8,5 @@
   "dockerfile": "./Dockerfile",
   "dev": {
     "command": "tsx ./backend/index.ts"
-  },
-  "healthCheckPath": "/"
+  }
 }

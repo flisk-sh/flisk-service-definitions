@@ -8,6 +8,5 @@
   "image": "alpine",
   "dev": {
     "command": "watch -n1 cat /app/code/somefile.txt"
-  },
-  "healthCheckPath": "/"
+  }
 }

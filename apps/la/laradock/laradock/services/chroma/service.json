@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "laradock",
   "port": 4010,
-  "image": "chromadb/chroma:${CHROMA_VERSION}",
-  "healthCheckPath": "/"
+  "image": "chromadb/chroma:${CHROMA_VERSION}"
 }

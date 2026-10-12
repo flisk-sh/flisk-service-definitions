@@ -1,0 +1,9 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.app.json",
+  "name": "@psviderski/uncloud",
+  "schemaVersion": 1,
+  "description": "A lightweight tool for deploying and managing containerised applications across a network of Docker hosts. Bridging the gap between Docker and Kubernetes ✨",
+  "repository": "https://github.com/psviderski/uncloud",
+  "license": "Apache-2.0",
+  "sourceCommit": "ba224bb5bedd22b1c98ed8ffbbd253aa82e1b2cb"
+}

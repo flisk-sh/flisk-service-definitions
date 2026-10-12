@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "uncloud",
   "port": 4003,
-  "image": "127.0.0.1:${TEST_REGISTRY_PORT}/service-first",
-  "healthCheckPath": "/"
+  "image": "127.0.0.1:${TEST_REGISTRY_PORT}/service-first"
 }

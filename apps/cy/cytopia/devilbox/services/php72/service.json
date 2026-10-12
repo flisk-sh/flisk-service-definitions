@@ -8,6 +8,5 @@
   "image": "devilbox/php-fpm:7.2-prod-0.150",
   "dependsOn": [
     "bind"
-  ],
-  "healthCheckPath": "/"
+  ]
 }

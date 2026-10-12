@@ -9,6 +9,5 @@
   "dependsOn": [
     "clamd-mailcow",
     "dovecot-mailcow"
-  ],
-  "healthCheckPath": "/"
+  ]
 }

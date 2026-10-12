@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "mailcow-dockerized",
   "port": 4009,
-  "image": "ghcr.io/mailcow/olefy:1.15",
-  "healthCheckPath": "/"
+  "image": "ghcr.io/mailcow/olefy:1.15"
 }

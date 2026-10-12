@@ -8,6 +8,5 @@
   "dockerfile": "Dockerfile",
   "dev": {
     "command": "/bin/sh -c /app/docker-entrypoint.sh"
-  },
-  "healthCheckPath": "/"
+  }
 }

@@ -12,6 +12,5 @@
   ],
   "dev": {
     "command": "daemon --docker -f label=com.docker.compose.project=${COMPOSE_PROJECT_NAME}"
-  },
-  "healthCheckPath": "/"
+  }
 }

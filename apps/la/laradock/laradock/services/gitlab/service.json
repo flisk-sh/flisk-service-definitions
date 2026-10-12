@@ -9,6 +9,5 @@
   "dependsOn": [
     "postgres",
     "redis"
-  ],
-  "healthCheckPath": "/"
+  ]
 }

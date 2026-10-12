@@ -1,0 +1,10 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "whoami",
+  "appType": "bring-your-own",
+  "stack": "tdk-crawl-w2iniy",
+  "port": 4013,
+  "healthCheckPath": "/health",
+  "image": "emilevauge/whoami"
+}

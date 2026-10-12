@@ -1,0 +1,10 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "service-no-build",
+  "appType": "bring-your-own",
+  "stack": "tdk-crawl-jvdbdd",
+  "port": 4001,
+  "healthCheckPath": "/health",
+  "image": "portainer/pause:3.9"
+}

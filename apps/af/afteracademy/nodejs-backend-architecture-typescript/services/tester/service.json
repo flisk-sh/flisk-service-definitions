@@ -9,6 +9,5 @@
   "dependsOn": [
     "mongo",
     "redis"
-  ],
-  "healthCheckPath": "/"
+  ]
 }

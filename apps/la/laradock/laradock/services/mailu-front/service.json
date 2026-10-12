@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "laradock",
   "port": 4050,
-  "image": "mailu/nginx:${MAILU_VERSION}",
-  "healthCheckPath": "/"
+  "image": "mailu/nginx:${MAILU_VERSION}"
 }

@@ -8,6 +8,5 @@
   "image": "bitnami/keycloak:${KEYCLOAK_VERSION}",
   "dependsOn": [
     "postgres"
-  ],
-  "healthCheckPath": "/"
+  ]
 }

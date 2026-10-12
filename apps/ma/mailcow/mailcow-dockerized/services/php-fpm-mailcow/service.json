@@ -11,6 +11,5 @@
   ],
   "dev": {
     "command": "php-fpm -d date.timezone=${TZ} -d expose_php=0"
-  },
-  "healthCheckPath": "/"
+  }
 }

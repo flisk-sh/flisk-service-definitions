@@ -1,0 +1,13 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "tdk-crawl-1bxof2",
+  "appType": "bring-your-own",
+  "stack": "tdk-crawl-1bxof2",
+  "port": 4000,
+  "healthCheckPath": "/health",
+  "dockerfile": "./Dockerfile",
+  "dev": {
+    "command": "tsx ./backend/index.ts"
+  }
+}

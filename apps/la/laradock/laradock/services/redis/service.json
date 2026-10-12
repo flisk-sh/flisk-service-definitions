@@ -6,6 +6,5 @@
   "stack": "laradock",
   "port": 4092,
   "dockerfile": "./Dockerfile",
-  "dev": {},
-  "healthCheckPath": "/"
+  "dev": {}
 }

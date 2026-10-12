@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "laradock",
   "port": 4079,
-  "image": "prodrigestivill/postgres-backup-local",
-  "healthCheckPath": "/"
+  "image": "prodrigestivill/postgres-backup-local"
 }

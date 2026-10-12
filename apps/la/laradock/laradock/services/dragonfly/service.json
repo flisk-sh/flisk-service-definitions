@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "laradock",
   "port": 4019,
-  "image": "docker.dragonflydb.io/dragonflydb/dragonfly:${DRAGONFLY_VERSION}",
-  "healthCheckPath": "/"
+  "image": "docker.dragonflydb.io/dragonflydb/dragonfly:${DRAGONFLY_VERSION}"
 }

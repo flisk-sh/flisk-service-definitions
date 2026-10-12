@@ -8,6 +8,5 @@
   "dockerfile": "Dockerfile",
   "dev": {
     "command": "ping -c 5 www.google.com"
-  },
-  "healthCheckPath": "/"
+  }
 }

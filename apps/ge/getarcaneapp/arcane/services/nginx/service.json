@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "arcane",
   "port": 4011,
-  "image": "public.ecr.aws/nginx/nginx:stable-alpine",
-  "healthCheckPath": "/"
+  "image": "public.ecr.aws/nginx/nginx:stable-alpine"
 }

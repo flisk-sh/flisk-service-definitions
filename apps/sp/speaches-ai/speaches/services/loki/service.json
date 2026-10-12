@@ -8,6 +8,5 @@
   "image": "grafana/loki:3.5.5",
   "dev": {
     "command": "-config.file=/etc/loki.yaml"
-  },
-  "healthCheckPath": "/"
+  }
 }

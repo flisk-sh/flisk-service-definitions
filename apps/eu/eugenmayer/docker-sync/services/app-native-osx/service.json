@@ -8,6 +8,5 @@
   "image": "alpine",
   "dev": {
     "command": "watch -n3 cat /var/www/index.html"
-  },
-  "healthCheckPath": "/"
+  }
 }

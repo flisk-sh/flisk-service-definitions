@@ -1,0 +1,10 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "mailu-webmail",
+  "appType": "bring-your-own",
+  "stack": "tdk-crawl-z7bbuo",
+  "port": 4054,
+  "healthCheckPath": "/health",
+  "image": "mailu/${MAILU_WEBMAIL}:${MAILU_VERSION}"
+}

@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "uncloud",
   "port": 4001,
-  "image": "portainer/pause:3.9",
-  "healthCheckPath": "/"
+  "image": "portainer/pause:3.9"
 }

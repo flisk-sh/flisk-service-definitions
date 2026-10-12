@@ -8,6 +8,5 @@
   "image": "mailu/postfix:${MAILU_VERSION}",
   "dependsOn": [
     "mailu-front"
-  ],
-  "healthCheckPath": "/"
+  ]
 }

@@ -8,6 +8,5 @@
   "dockerfile": "Dockerfile",
   "dev": {
     "command": "/etc/varnish/start.sh"
-  },
-  "healthCheckPath": "/"
+  }
 }

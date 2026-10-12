@@ -10,6 +10,5 @@
     "mysql-mailcow",
     "netfilter-mailcow",
     "redis-mailcow"
-  ],
-  "healthCheckPath": "/"
+  ]
 }

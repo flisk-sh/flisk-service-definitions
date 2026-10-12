@@ -1,0 +1,14 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "coolify",
+  "appType": "bring-your-own",
+  "stack": "tdk-crawl-shmf9y",
+  "port": 4006,
+  "healthCheckPath": "/health",
+  "dockerfile": "./Dockerfile",
+  "dependsOn": [
+    "postgres",
+    "redis"
+  ]
+}

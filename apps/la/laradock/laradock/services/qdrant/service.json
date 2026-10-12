@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "laradock",
   "port": 4089,
-  "image": "qdrant/qdrant:${QDRANT_VERSION}",
-  "healthCheckPath": "/"
+  "image": "qdrant/qdrant:${QDRANT_VERSION}"
 }

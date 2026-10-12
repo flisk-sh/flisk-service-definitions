@@ -8,6 +8,5 @@
   "image": "python:3.8",
   "dev": {
     "command": "sh -c \"pip install -r requirements.txt && mkdocs serve -a 0.0.0.0:8000\""
-  },
-  "healthCheckPath": "/"
+  }
 }

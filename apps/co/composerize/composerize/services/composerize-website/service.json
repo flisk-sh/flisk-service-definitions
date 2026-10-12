@@ -8,6 +8,5 @@
   "dockerfile": "./Dockerfile",
   "dev": {
     "command": "make .env && react-scripts start"
-  },
-  "healthCheckPath": "/"
+  }
 }

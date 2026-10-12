@@ -1,0 +1,13 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "redis",
+  "appType": "bring-your-own",
+  "stack": "tdk-crawl-shmf9y",
+  "port": 4012,
+  "healthCheckPath": "/health",
+  "image": "redis:7-alpine",
+  "dev": {
+    "command": "redis-server --save 20 1 --loglevel warning --requirepass ${REDIS_PASSWORD}"
+  }
+}

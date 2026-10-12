@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "mailcow-dockerized",
   "port": 4006,
-  "image": "ghcr.io/mailcow/netfilter:1.64",
-  "healthCheckPath": "/"
+  "image": "ghcr.io/mailcow/netfilter:1.64"
 }

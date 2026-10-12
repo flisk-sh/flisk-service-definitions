@@ -5,6 +5,5 @@
   "appType": "bring-your-own",
   "stack": "cdn-up-and-running",
   "port": 4001,
-  "dockerfile": "Dockerfile",
-  "healthCheckPath": "/"
+  "dockerfile": "Dockerfile"
 }

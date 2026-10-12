@@ -8,6 +8,5 @@
   "dockerfile": "Dockerfile",
   "dev": {
     "command": "/sbin/tini -g -- /srv/acme.sh"
-  },
-  "healthCheckPath": "/"
+  }
 }

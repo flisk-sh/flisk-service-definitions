@@ -8,6 +8,5 @@
   "image": "blackfire/blackfire",
   "dependsOn": [
     "php-fpm"
-  ],
-  "healthCheckPath": "/"
+  ]
 }

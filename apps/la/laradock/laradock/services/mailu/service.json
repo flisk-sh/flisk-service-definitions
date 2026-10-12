@@ -17,6 +17,5 @@
     "mailu-webdav",
     "mailu-webmail"
   ],
-  "dev": {},
-  "healthCheckPath": "/"
+  "dev": {}
 }

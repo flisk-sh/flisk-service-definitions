@@ -1,0 +1,14 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "coolify-helper",
+  "appType": "bring-your-own",
+  "stack": "tdk-crawl-shmf9y",
+  "port": 4008,
+  "healthCheckPath": "/health",
+  "buildContext": "../../../docker/coolify-helper",
+  "dockerfile": "Dockerfile",
+  "dev": {
+    "command": "tail -f /dev/null"
+  }
+}

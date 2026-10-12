@@ -9,6 +9,5 @@
   "dependsOn": [
     "netfilter-mailcow",
     "unbound-mailcow"
-  ],
-  "healthCheckPath": "/"
+  ]
 }

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "development",
+  "appType": "bring-your-own",
+  "stack": "tdk-crawl-shmf9y",
+  "port": 4009,
+  "healthCheckPath": "/health",
+  "buildContext": "../../../docker/development",
+  "dockerfile": "Dockerfile"
+}
