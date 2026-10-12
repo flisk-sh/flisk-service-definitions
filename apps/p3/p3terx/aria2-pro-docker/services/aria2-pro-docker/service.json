@@ -1,0 +1,9 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "aria2-pro-docker",
+  "appType": "bring-your-own",
+  "stack": "aria2-pro-docker",
+  "port": 4002,
+  "dockerfile": "Dockerfile"
+}

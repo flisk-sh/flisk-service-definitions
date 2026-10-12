@@ -1,0 +1,12 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "nginx-ui",
+  "appType": "bring-your-own",
+  "stack": "nginx-ui",
+  "port": 4001,
+  "image": "nginx-ui:latest",
+  "dev": {
+    "command": "--http 0.0.0.0:8080 --wsgi-file wsgi.py --callable app --processes 1 --threads 8"
+  }
+}

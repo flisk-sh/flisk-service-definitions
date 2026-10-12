@@ -1,0 +1,8 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.app.json",
+  "name": "@speaches-ai/speaches",
+  "schemaVersion": 1,
+  "repository": "https://github.com/speaches-ai/speaches",
+  "license": "MIT",
+  "sourceCommit": "993994f7984bf3fe9655b267448328cf66fccb42"
+}

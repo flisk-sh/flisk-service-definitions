@@ -1,0 +1,12 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "instantbox",
+  "appType": "bring-your-own",
+  "stack": "instantbox",
+  "port": 4003,
+  "dockerfile": "Dockerfile",
+  "dev": {
+    "command": "inspire.py"
+  }
+}

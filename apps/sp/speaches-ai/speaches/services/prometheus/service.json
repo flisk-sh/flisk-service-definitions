@@ -1,0 +1,12 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "prometheus",
+  "appType": "bring-your-own",
+  "stack": "speaches",
+  "port": 4002,
+  "image": "prom/prometheus:v2.55.1",
+  "dev": {
+    "command": "--config.file=/etc/prometheus.yaml"
+  }
+}

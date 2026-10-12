@@ -1,0 +1,9 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "uptime-kuma",
+  "appType": "bring-your-own",
+  "stack": "dockge",
+  "port": 4004,
+  "image": "louislam/uptime-kuma:1"
+}

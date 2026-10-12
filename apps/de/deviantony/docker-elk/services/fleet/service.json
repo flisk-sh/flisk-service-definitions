@@ -1,0 +1,9 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "fleet",
+  "appType": "bring-your-own",
+  "stack": "docker-elk",
+  "port": 4003,
+  "dockerfile": "Dockerfile"
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "alertmanager",
+  "appType": "bring-your-own",
+  "stack": "prometheus",
+  "port": 4005,
+  "image": "prom/alertmanager",
+  "dev": {
+    "command": "--config.file=/etc/alertmanager/config.yml --storage.path=/alertmanager"
+  }
+}

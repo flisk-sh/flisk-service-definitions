@@ -1,0 +1,9 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "nginx-proxy-manager",
+  "appType": "bring-your-own",
+  "stack": "dockge",
+  "port": 4003,
+  "image": "jc21/nginx-proxy-manager:latest"
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "elasticsearch",
+  "appType": "bring-your-own",
+  "stack": "docker-elk",
+  "port": 4001,
+  "dockerfile": "./Dockerfile"
+}

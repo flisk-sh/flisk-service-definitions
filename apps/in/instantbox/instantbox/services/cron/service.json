@@ -1,0 +1,9 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "cron",
+  "appType": "bring-your-own",
+  "stack": "instantbox",
+  "port": 4000,
+  "image": "instantbox/cron:latest"
+}

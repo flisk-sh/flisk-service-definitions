@@ -1,0 +1,12 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "dockge",
+  "appType": "bring-your-own",
+  "stack": "dockge",
+  "port": 4000,
+  "dockerfile": "./Dockerfile",
+  "dev": {
+    "command": "tsx ./backend/index.ts"
+  }
+}

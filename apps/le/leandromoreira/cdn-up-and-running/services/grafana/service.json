@@ -1,0 +1,9 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "schemaVersion": 1,
+  "appName": "grafana",
+  "appType": "bring-your-own",
+  "stack": "cdn-up-and-running",
+  "port": 4000,
+  "image": "grafana/grafana:latest"
+}

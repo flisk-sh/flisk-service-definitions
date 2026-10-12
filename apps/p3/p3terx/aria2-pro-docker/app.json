@@ -1,0 +1,9 @@
+{
+  "$schema": "https://tdk-landscape.github.io/schema.app.json",
+  "name": "@p3terx/aria2-pro-docker",
+  "schemaVersion": 1,
+  "description": "Aria2 Pro | A perfect Aria2 Docker image | 更好用的 Aria2 Docker 容器镜像",
+  "repository": "https://github.com/P3TERX/Aria2-Pro-Docker",
+  "license": "MIT",
+  "sourceCommit": "4ec58da2901947f57e2e53f30077723627c8eaeb"
+}
