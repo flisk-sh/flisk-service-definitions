@@ -2,7 +2,7 @@
   "json.schemas": [
     {
       "fileMatch": ["**/services/*/service.json"],
-      "url": "./schema/service.schema.json"
+      "url": "https://tdk-landscape.github.io/schema.service.json"
     }
   ]
 }
