@@ -23,7 +23,7 @@
 - **Ports are unique within an app.** Backends use 4000–5999, frontends 3000–3999, as the schema requires.
 - **`dependsOn` must name a service or stack in the same app.**
 - **Canonical formatting.** Two-space indentation, a trailing newline, and key order as written. `npm run format` fixes this.
-- **Schema changes come from tdk-cli-core first.** The validator reads the published schema at flisk.sh, so nothing in this repo needs to change when the schema does.
+- **Schema changes come from flisk first.** The validator reads the published schema at flisk.sh, so nothing in this repo needs to change when the schema does.
 
 ## Pull request review
 
@@ -31,4 +31,4 @@ CI validates only the apps a pull request touches. A change to `schema/` validat
 
 ## Unknown fields
 
-A key that is not in the schema produces a warning, not an error. Warnings are fine for a new field that tdk-cli-core is about to add. Please raise a schema change upstream if you need one for real.
+A key that is not in the schema produces a warning, not an error. Warnings are fine for a new field that flisk is about to add. Please raise a schema change upstream if you need one for real.
