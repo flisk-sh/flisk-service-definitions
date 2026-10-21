@@ -51,7 +51,7 @@ apps/<shard>/<owner>/<app>/
 
 The validator loads the service schema from the published copy at https://flisk.sh/schema.service.json. You can override the URL with `TDK_SERVICE_SCHEMA_URL`.
 
-The source of truth is `engine/schemas/service-schema.json` in [tdk-cli-core](https://github.com/flisk-sh/flisk). The published copy is synced from there. Do not edit the schema in this repo.
+The source of truth is `engine/schemas/service-schema.json` in [flisk](https://github.com/flisk-sh/flisk). The published copy is synced from there. Do not edit the schema in this repo.
 
 `app.json` is registry metadata (name, description, license, repository, and the commit the services were imported from). It is not part of the TDK runtime contract, and it has no schema. The validator only checks that its `name` matches the directory path.
 
