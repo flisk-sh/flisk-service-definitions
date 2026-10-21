@@ -7,7 +7,7 @@ import { validateRepo, shardFor, canonicalJson } from './lib/validate.mjs';
 
 const count = Number(process.argv[2] ?? 5000);
 const root = await mkdtemp(join(tmpdir(), 'tdk-bench-'));
-const SCHEMA = 'https://tdk-landscape.github.io/schema.service.json';
+const SCHEMA = 'https://flisk.sh/schema.service.json';
 
 for (let i = 0; i < count; i++) {
   const owner = `owner-${i % 997}`;

@@ -83,7 +83,7 @@ async function importRepo(repo, validator, stats) {
       const dir = join(appDir, 'services', doc.appName);
       await mkdir(dir, { recursive: true });
       await writeFile(join(dir, 'service.json'), canonicalJson({
-        $schema: 'https://tdk-landscape.github.io/schema.service.json', ...doc,
+        $schema: 'https://flisk.sh/schema.service.json', ...doc,
       }));
     }
     await writeFile(join(appDir, 'app.json'), canonicalJson({

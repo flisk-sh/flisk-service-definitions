@@ -49,9 +49,9 @@ apps/<shard>/<owner>/<app>/
 
 ## Schema
 
-The validator loads the service schema from the published copy at https://tdk-landscape.github.io/schema.service.json. You can override the URL with `TDK_SERVICE_SCHEMA_URL`.
+The validator loads the service schema from the published copy at https://flisk.sh/schema.service.json. You can override the URL with `TDK_SERVICE_SCHEMA_URL`.
 
-The source of truth is `engine/schemas/service-schema.json` in [tdk-cli-core](https://github.com/tdk-landscape/tdk-cli-core). The published copy is synced from there. Do not edit the schema in this repo.
+The source of truth is `engine/schemas/service-schema.json` in [tdk-cli-core](https://github.com/flisk-sh/flisk). The published copy is synced from there. Do not edit the schema in this repo.
 
 `app.json` is registry metadata (name, description, license, repository, and the commit the services were imported from). It is not part of the TDK runtime contract, and it has no schema. The validator only checks that its `name` matches the directory path.
 
@@ -61,7 +61,7 @@ Add a `$schema` key to any `service.json`:
 
 ```json
 {
-  "$schema": "https://tdk-landscape.github.io/schema.service.json",
+  "$schema": "https://flisk.sh/schema.service.json",
   "schemaVersion": 1,
   "appName": "orders-api"
 }
@@ -72,7 +72,7 @@ Or map the filename once in `.vscode/settings.json` so the editor validates ever
 ```json
 {
   "json.schemas": [
-    { "fileMatch": ["**/services/*/service.json"], "url": "https://tdk-landscape.github.io/schema.service.json" }
+    { "fileMatch": ["**/services/*/service.json"], "url": "https://flisk.sh/schema.service.json" }
   ]
 }
 ```

@@ -8,7 +8,7 @@ import { validateRepo, canonicalJson, shardFor } from '../scripts/lib/validate.m
 
 const repoRoot = join(dirname(fileURLToPath(import.meta.url)), '..');
 
-const SCHEMA_URL = 'https://tdk-landscape.github.io/schema.service.json';
+const SCHEMA_URL = 'https://flisk.sh/schema.service.json';
 const service = (appName, extra = {}) => ({
   $schema: SCHEMA_URL,
   schemaVersion: 1,

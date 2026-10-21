@@ -6,7 +6,7 @@ import Ajv from 'ajv';
 const REPO_ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
 // The service schema is read from the published copy, which is synced from tdk-cli-core.
 // Override with TDK_SERVICE_SCHEMA_URL to test against another build.
-export const SERVICE_SCHEMA_URL = process.env.TDK_SERVICE_SCHEMA_URL ?? 'https://tdk-landscape.github.io/schema.service.json';
+export const SERVICE_SCHEMA_URL = process.env.TDK_SERVICE_SCHEMA_URL ?? 'https://flisk.sh/schema.service.json';
 
 // Secrets belong in the project .env, never in service.json (see schema "secrets" description).
 export const SECRET_KEY_PATTERN = /(SECRET|PASSWORD|PASSWD|TOKEN|API_?KEY|PRIVATE_KEY)/i;
