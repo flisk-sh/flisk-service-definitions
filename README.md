@@ -1,10 +1,10 @@
 # tdk-service-definitions
 
-A community registry of TDK Landscape apps. Each app publishes its `service.json` files here, the way DefinitelyTyped publishes type definitions for npm packages. Every file is validated against the TDK service schema on each pull request.
+A community registry of Flisk apps. Each app publishes its `service.json` files here, the way DefinitelyTyped publishes type definitions for npm packages. Every file is validated against the TDK service schema on each pull request.
 
 ## Current apps
 
-These 21 apps were imported with `tdk-import` and then schema-validated. The first 11 come from public docker-compose repositories; the `docker/*` samples come from [docker/awesome-compose](https://github.com/docker/awesome-compose) (CC0). **None of them has been runtime-tested.** Nobody has run `tdk up` on them yet, so treat them as seed data, not verified examples.
+These 21 apps were imported with `flisk-import` and then schema-validated. The first 11 come from public docker-compose repositories; the `docker/*` samples come from [docker/awesome-compose](https://github.com/docker/awesome-compose) (CC0). **None of them has been runtime-tested.** Nobody has run `tdk up` on them yet, so treat them as seed data, not verified examples.
 
 The importer assigns each service a port in 4000–5999. A container that listens on its original port (80, 3000, 8080, ...) will not answer on the assigned port until it reads `$PORT`. Each service's manifest is valid, but a working setup may need that change first.
 

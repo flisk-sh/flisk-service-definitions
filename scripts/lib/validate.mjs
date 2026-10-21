@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 import Ajv from 'ajv';
 
 const REPO_ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
-// The service schema is read from the published copy, which is synced from tdk-cli-core.
+// The service schema is read from the published copy, which is synced from flisk.
 // Override with TDK_SERVICE_SCHEMA_URL to test against another build.
 export const SERVICE_SCHEMA_URL = process.env.TDK_SERVICE_SCHEMA_URL ?? 'https://flisk.sh/schema.service.json';
 

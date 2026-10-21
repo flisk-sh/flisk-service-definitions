@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 // Imports service.json files from real public GitHub repos into a staging directory.
 //
-//   node scripts/crawl.mjs --query "topic:docker-compose" --limit 50 [--out .crawl/staging] [--import /path/to/tdk-import/dist/cli.js]
+//   node scripts/crawl.mjs --query "topic:docker-compose" --limit 50 [--out .crawl/staging] [--import /path/to/flisk-import/dist/cli.js]
 //
 // Only public, non-fork, non-archived repos with an SPDX license are considered. Nothing is written to apps/;
-// review the staging directory, then copy what you want in. Environment values are never imported (tdk-import
+// review the staging directory, then copy what you want in. Environment values are never imported (flisk-import
 // records names only), and the source repo, license and commit go into app.json.
 import { execFile } from 'node:child_process';
 import { cp, mkdir, mkdtemp, readdir, readFile, rm, writeFile } from 'node:fs/promises';
@@ -27,7 +27,7 @@ function arg(name, fallback) {
 const query = arg('query', 'topic:docker-compose');
 const limit = Number(arg('limit', '50'));
 const out = resolve(arg('out', join(REPO_ROOT, '.crawl', 'staging')));
-const importer = resolve(arg('import', join(REPO_ROOT, '..', 'tdk-import', 'dist', 'cli.js')));
+const importer = resolve(arg('import', join(REPO_ROOT, '..', 'flisk-import', 'dist', 'cli.js')));
 
 const slug = (value) => value.toLowerCase().replace(/[^a-z0-9-]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
 const sleep = (ms) => new Promise((done) => setTimeout(done, ms));
@@ -63,7 +63,7 @@ async function importRepo(repo, validator, stats) {
     await run('git', ['clone', '--depth', '1', '--quiet', '--filter=blob:limit=1m', repo.clone_url, work], { timeout: 120_000 });
     const { stdout: sha } = await run('git', ['-C', work, 'rev-parse', 'HEAD']);
     await run('node', [importer, work, '--yes'], { timeout: 60_000 }).catch((error) => {
-      throw new Error(`tdk-import failed: ${String(error.stderr || error.message).split('\n')[0]}`);
+      throw new Error(`flisk-import failed: ${String(error.stderr || error.message).split('\n')[0]}`);
     });
 
     const found = [];
