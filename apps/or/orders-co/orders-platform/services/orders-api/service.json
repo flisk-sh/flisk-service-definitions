@@ -9,7 +9,7 @@
     "nats"
   ],
   "params": {
-    "NATS_URL": "nats://tdk_example_nats:4222"
+    "NATS_URL": "nats://flisk_example_nats:4222"
   },
   "healthCheckPath": "/health",
   "dependsOn": []

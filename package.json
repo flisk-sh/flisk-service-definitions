@@ -1,5 +1,5 @@
 {
-  "name": "tdk-service-definitions",
+  "name": "flisk-service-definitions",
   "version": "0.1.0",
   "private": true,
   "description": "Community registry of Flisk service.json definitions, validated against the Flisk service schema.",

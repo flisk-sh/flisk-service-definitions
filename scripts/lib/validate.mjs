@@ -5,8 +5,8 @@ import Ajv from 'ajv';
 
 const REPO_ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
 // The service schema is read from the published copy, which is synced from flisk.
-// Override with TDK_SERVICE_SCHEMA_URL to test against another build.
-export const SERVICE_SCHEMA_URL = process.env.TDK_SERVICE_SCHEMA_URL ?? 'https://flisk.sh/schema.service.json';
+// Override with FLISK_SERVICE_SCHEMA_URL to test against another build.
+export const SERVICE_SCHEMA_URL = process.env.FLISK_SERVICE_SCHEMA_URL ?? 'https://flisk.sh/schema.service.json';
 
 // Secrets belong in the project .env, never in service.json (see schema "secrets" description).
 export const SECRET_KEY_PATTERN = /(SECRET|PASSWORD|PASSWD|TOKEN|API_?KEY|PRIVATE_KEY)/i;
@@ -105,7 +105,7 @@ function schemaErrors(validate, rel, errors) {
 
 /**
  * Validates one app (apps/<shard>/<owner>/<app>): its app.json and every services/<appName>/service.json.
- * Ports and dependsOn are checked within the app, because each app is its own TDK landscape.
+ * Ports and dependsOn are checked within the app, because each app is its own Flisk landscape.
  */
 export async function validateApp(rootDir, appRel, validator, { fix = false } = {}) {
   const errors = [];

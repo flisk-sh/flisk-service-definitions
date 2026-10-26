@@ -26,7 +26,7 @@ const appJson = (owner, app) => ({
 
 /** Writes an app tree under a temp root. files: { "services/x/service.json": obj | string } */
 async function makeRoot(apps) {
-  const root = await mkdtemp(join(tmpdir(), 'tdk-registry-'));
+  const root = await mkdtemp(join(tmpdir(), 'flisk-registry-'));
   for (const [appRel, files] of Object.entries(apps)) {
     for (const [file, body] of Object.entries(files)) {
       const path = join(root, appRel, file);

@@ -6,7 +6,7 @@ import { join } from 'node:path';
 import { validateRepo, shardFor, canonicalJson } from './lib/validate.mjs';
 
 const count = Number(process.argv[2] ?? 5000);
-const root = await mkdtemp(join(tmpdir(), 'tdk-bench-'));
+const root = await mkdtemp(join(tmpdir(), 'flisk-bench-'));
 const SCHEMA = 'https://flisk.sh/schema.service.json';
 
 for (let i = 0; i < count; i++) {

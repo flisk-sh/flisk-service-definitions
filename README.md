@@ -1,4 +1,4 @@
-# tdk-service-definitions
+# flisk-service-definitions
 
 A community registry of Flisk apps. Each app publishes its `service.json` files here, the way DefinitelyTyped publishes type definitions for npm packages. Every file is validated against the Flisk service schema on each pull request.
 
@@ -49,7 +49,7 @@ apps/<shard>/<owner>/<app>/
 
 ## Schema
 
-The validator loads the service schema from the published copy at https://flisk.sh/schema.service.json. You can override the URL with `TDK_SERVICE_SCHEMA_URL`.
+The validator loads the service schema from the published copy at https://flisk.sh/schema.service.json. You can override the URL with `FLISK_SERVICE_SCHEMA_URL`.
 
 The source of truth is `engine/schemas/service-schema.json` in [flisk](https://github.com/flisk-sh/flisk). The published copy is synced from there. Do not edit the schema in this repo.
 

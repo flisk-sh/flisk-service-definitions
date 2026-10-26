@@ -58,7 +58,7 @@ async function importRepo(repo, validator, stats) {
   const app = slug(repo.name);
   if (!OWNER_PATTERN.test(owner) || !APP_PATTERN.test(app)) return stats.skipped('bad slug', repo);
 
-  const work = await mkdtemp(join(tmpdir(), 'tdk-crawl-'));
+  const work = await mkdtemp(join(tmpdir(), 'flisk-crawl-'));
   try {
     await run('git', ['clone', '--depth', '1', '--quiet', '--filter=blob:limit=1m', repo.clone_url, work], { timeout: 120_000 });
     const { stdout: sha } = await run('git', ['-C', work, 'rev-parse', 'HEAD']);
