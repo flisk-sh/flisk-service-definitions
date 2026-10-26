@@ -2,7 +2,7 @@
   "name": "tdk-service-definitions",
   "version": "0.1.0",
   "private": true,
-  "description": "Community registry of Flisk service.json definitions, validated against the TDK service schema.",
+  "description": "Community registry of Flisk service.json definitions, validated against the Flisk service schema.",
   "license": "MIT",
   "type": "module",
   "engines": {

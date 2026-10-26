@@ -1,10 +1,10 @@
 # tdk-service-definitions
 
-A community registry of Flisk apps. Each app publishes its `service.json` files here, the way DefinitelyTyped publishes type definitions for npm packages. Every file is validated against the TDK service schema on each pull request.
+A community registry of Flisk apps. Each app publishes its `service.json` files here, the way DefinitelyTyped publishes type definitions for npm packages. Every file is validated against the Flisk service schema on each pull request.
 
 ## Current apps
 
-These 21 apps were imported with `flisk-import` and then schema-validated. The first 11 come from public docker-compose repositories; the `docker/*` samples come from [docker/awesome-compose](https://github.com/docker/awesome-compose) (CC0). **None of them has been runtime-tested.** Nobody has run `tdk up` on them yet, so treat them as seed data, not verified examples.
+These 21 apps were imported with `flisk-import` and then schema-validated. The first 11 come from public docker-compose repositories; the `docker/*` samples come from [docker/awesome-compose](https://github.com/docker/awesome-compose) (CC0). **None of them has been runtime-tested.** Nobody has run `flisk up` on them yet, so treat them as seed data, not verified examples.
 
 The importer assigns each service a port in 4000–5999. A container that listens on its original port (80, 3000, 8080, ...) will not answer on the assigned port until it reads `$PORT`. Each service's manifest is valid, but a working setup may need that change first.
 
@@ -39,7 +39,7 @@ Single-container tools, PaaS installers and full development environments were l
 ```
 apps/<shard>/<owner>/<app>/
   app.json                          app registration (name, description, license)
-  services/<appName>/service.json   one TDK resource per directory
+  services/<appName>/service.json   one Flisk resource per directory
 ```
 
 - `<shard>` is the first two characters of `<owner>`, so no directory holds too many entries.
@@ -53,7 +53,7 @@ The validator loads the service schema from the published copy at https://flisk.
 
 The source of truth is `engine/schemas/service-schema.json` in [flisk](https://github.com/flisk-sh/flisk). The published copy is synced from there. Do not edit the schema in this repo.
 
-`app.json` is registry metadata (name, description, license, repository, and the commit the services were imported from). It is not part of the TDK runtime contract, and it has no schema. The validator only checks that its `name` matches the directory path.
+`app.json` is registry metadata (name, description, license, repository, and the commit the services were imported from). It is not part of the Flisk runtime contract, and it has no schema. The validator only checks that its `name` matches the directory path.
 
 ## Use a definition
 
