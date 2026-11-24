@@ -7,7 +7,7 @@
 // review the staging directory, then copy what you want in. Environment values are never imported (flisk-import
 // records names only), and the source repo, license and commit go into app.json.
 import { execFile } from 'node:child_process';
-import { cp, mkdir, mkdtemp, readdir, readFile, rm, writeFile } from 'node:fs/promises';
+import { mkdir, mkdtemp, readdir, readFile, rename, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -59,6 +59,7 @@ async function importRepo(repo, validator, stats) {
   if (!OWNER_PATTERN.test(owner) || !APP_PATTERN.test(app)) return stats.skipped('bad slug', repo);
 
   const work = await mkdtemp(join(tmpdir(), 'flisk-crawl-'));
+  let staging;
   try {
     await run('git', ['clone', '--depth', '1', '--quiet', '--filter=blob:limit=1m', repo.clone_url, work], { timeout: 120_000 });
     const { stdout: sha } = await run('git', ['-C', work, 'rev-parse', 'HEAD']);
@@ -78,15 +79,18 @@ async function importRepo(repo, validator, stats) {
 
     const appRel = appPath(owner, app);
     const appDir = join(out, appRel);
-    await rm(appDir, { recursive: true, force: true });
+    // Keep the previous import intact until its replacement passes validation.
+    await mkdir(out, { recursive: true });
+    staging = await mkdtemp(join(out, '.flisk-crawl-'));
+    const stagedApp = join(staging, appRel);
     for (const doc of found) {
-      const dir = join(appDir, 'services', doc.appName);
+      const dir = join(stagedApp, 'services', doc.appName);
       await mkdir(dir, { recursive: true });
       await writeFile(join(dir, 'service.json'), canonicalJson({
         $schema: 'https://flisk.sh/schema.service.json', ...doc,
       }));
     }
-    await writeFile(join(appDir, 'app.json'), canonicalJson({
+    await writeFile(join(stagedApp, 'app.json'), canonicalJson({
       name: `@${owner}/${app}`,
       ...(repo.description ? { description: repo.description.slice(0, 280) } : {}),
       repository: repo.html_url,
@@ -94,17 +98,20 @@ async function importRepo(repo, validator, stats) {
       sourceCommit: sha.trim(),
     }));
 
-    const result = await validateApp(out, appRel, validator, { fix: true });
+    const result = await validateApp(staging, appRel, validator, { fix: true });
     if (result.errors.length > 0) {
-      await rm(appDir, { recursive: true, force: true });
       return stats.skipped(`invalid: ${result.errors[0]}`, repo);
     }
+    await mkdir(dirname(appDir), { recursive: true });
+    await rm(appDir, { recursive: true, force: true });
+    await rename(stagedApp, appDir);
     stats.imported += 1;
     stats.services += result.services;
   } catch (error) {
     stats.skipped(`error: ${String(error.message).split('\n')[0]}`, repo);
   } finally {
     await rm(work, { recursive: true, force: true });
+    if (staging) await rm(staging, { recursive: true, force: true });
   }
 }
 
