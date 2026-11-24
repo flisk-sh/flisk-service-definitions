@@ -15,9 +15,15 @@ if (!owner || !app || !OWNER_PATTERN.test(owner) || !APP_PATTERN.test(app)) {
 const REPO_ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const dir = join(REPO_ROOT, appPath(owner, app));
 await mkdir(join(dir, 'services'), { recursive: true });
-await writeFile(join(dir, 'app.json'), canonicalJson({
-  name: `@${owner}/${app}`,
-  description: 'TODO: one line about the app.',
-  license: 'MIT',
-}));
+try {
+  await writeFile(join(dir, 'app.json'), canonicalJson({
+    name: `@${owner}/${app}`,
+    description: 'TODO: one line about the app.',
+    license: 'MIT',
+  }), { flag: 'wx' });
+} catch (error) {
+  if (!(error instanceof Error) || !('code' in error) || error.code !== 'EEXIST') throw error;
+  console.error(`${appPath(owner, app)}/app.json already exists; no manifest was written`);
+  process.exit(1);
+}
 console.log(`created ${appPath(owner, app)}/app.json; add services/<appName>/service.json next`);
